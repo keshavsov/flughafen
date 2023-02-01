@@ -1,9 +1,33 @@
 import React from 'react'
 import logo from '../Assets/Images/logo.png'
 import {Link} from 'react-router-dom'
+import SvgImages from '../Assets/Images/svgImages';
+
+const { LocationSvg, ContactSvg, AvatarSvg } = SvgImages;
 export function Footer() {
   return (<>
-    <footer className="bd-footer  py-5 mt-5 " style={{backgroundColor:"#11191F"}} >
+    <footer className="bd-footer position-relative py-5 mt-5 " style={{backgroundColor:"#11191F"}} >
+    <div className='container p-5 rounded position-absolute' style={{background:"#0E4672",
+    left: '6rem', top:"-50px",}}>
+        <div className='row text-white'>
+          <div className='col-md-4' >
+          <AvatarSvg  height='20' width='20'/>
+         <b style={{fontSize:"16px"}}> Robeena Butt </b>
+          </div>
+          <div className='col-md-4' >
+          <span>
+            <ContactSvg height='20' width='20' />
+            </span>Robeena Butt
+          </div>
+          <div className='col-md-4' >
+          <span>
+          <LocationSvg height='20' width='20' />
+          Location
+            </span>Robeena Butt
+          </div>
+           
+        </div>
+      </div>
       <div className="container ">
         <div className="row  mt-4 justify-content-evenly">
           <div className="col-3 col-lg-3 mb-3">

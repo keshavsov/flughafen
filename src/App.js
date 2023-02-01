@@ -3,6 +3,7 @@ import {useRoutes} from 'react-router-dom';
 import LayoutI from "./component/LayoutI";
 import Home from "./pages/Home";
 import {Footer} from './component/Footer'
+import {VehicleOption} from './pages/VehicleOption'
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     {path: '/', element: <Login/>},
     {path: '/home', element: <Home/>},
     {path: '/footer', element: <Footer/>},
+    {path: '/vehicle', element: <VehicleOption/>},
 
   ]);
 

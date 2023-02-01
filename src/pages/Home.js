@@ -6,7 +6,13 @@ import message1 from '../Assets/Images/message1.png'
 import message2 from '../Assets/Images/message2.png'
 import message3 from '../Assets/Images/message3.png'
 import group1 from '../Assets/Images/Group62.png'
-import group62 from '../Assets/Images/Group62(1).png'
+import group2 from '../Assets/Images/Group63.png'
+import group3 from '../Assets/Images/Group64.png'
+import group4 from '../Assets/Images/Group64(1).png'
+import group5 from '../Assets/Images/Group64(2).png'
+import couple from '../Assets/Images/couple.png'
+import SvgImages from '../Assets/Images/svgImages';
+const { Location } = SvgImages;
 
 export default function Home() {
   return (<>
@@ -112,44 +118,24 @@ export default function Home() {
               <p className="span text-dark">The easiest way to book and arrive to your  desired<br /> destination from/to the airport.</p>
             </div>
           </center>
-          <div className='row'>
- <div><img src={group1} width="200" height="200" /> </div>
-<div className='col-md-4 col-sm-12'><img src={group62}  width="200" height="200" style={{objectFit:"contain"}}/></div>
-<div className='col-md-4  col-sm-12'><img src={group62}  width="200" height="200" style={{objectFit:"contain"}}/></div>
-<div className='col-md-4  col-sm-12'><img src={group62}  width="200" height="200" style={{objectFit:"contain"}}/></div>
-{/* ========================= =========================================*/}
-{/* <div className="h-[213px] md:mt-[0] sm:mt-[0] mt-[10px] relative md:w-[100%] sm:w-[100%] w-[30%]">
-                <div className="h-[213px] m-[auto] w-[100%]">
-                  <img
-                    src="images/img_1.svg"
-                    className="absolute bottom-[0] h-[158px] left-[0] w-[auto]"
-                    alt="One"
-                  />
-                  <span
-                    className="absolute bottom-[2%] sm:mx-[0] right-[0] text-black_900 text-left sm:w-[100%] w-[86%]"
-                    variant="body7"
-                  >
-                    Book online easily through our website
-                  </span>
-                  <img
-                    src="images/img_group3.svg"
-                    className="absolute h-[113px] left-[14%] top-[0] w-[auto]"
-                    alt="GroupThree"
-                  />
-                </div>
-                <button
-                  className="absolute flex h-[50px] items-center justify-center left-[10%] rounded-radius50 top-[35%] w-[50px]"
-                  size="smIcn"
-                  variant="icbOutlineBlack9005e"
-                >
-                  <img
-                    src="images/img_group66.png"
-                    className="h-[37px] w-[37px]"
-                    alt="GroupSixtySix"
-                  />
-                </button>
-              </div> */}
-{/* ====================================================================== */}
+          <div className='row ml-2 mt-2 '>
+            <div className='col-md-4 position-relative my-2'><img src={group1} width="200" height="200" />
+              <label className='position-absolute text-position'>Book online easily<br /> through our website</label>
+            </div>
+            <div className='col-md-4 position-relative my-2'><img src={group2} width="200" height="200" />
+              <label className='position-absolute text-position'>Book online easily<br /> through our website</label>
+            </div>
+            <div className='col-md-4 position-relative my-2'><img src={group3} width="200" height="200" />
+              <label className='position-absolute text-position'>Book online easily<br /> through our website</label>
+            </div>
+
+            <div className='col-md-4 position-relative my-2'><img src={group4} width="200" height="200" />
+              <label className='position-absolute text-position'>Book online easily<br /> through our website</label>
+            </div>
+            <div className='col-md-4 position-relative'><img src={group5} width="200" height="200" />
+              <label className='position-absolute text-position'>Book online easily<br /> through our website</label>
+            </div>
+
           </div>
         </div>
       </div>
@@ -183,24 +169,36 @@ export default function Home() {
             <div className='row'>
 
               <div className='col-md-4 col-xs-12'>
-                <img src={message1} width="50" height="50" className='message-img'/>
+                <img src={message1} width="50" height="50" className='message-img' />
                 <p className='span-text'>Receive a booking confirmation by e-mail in a few minutes after placing your order.</p>
               </div>
               <div className='col-md-4 col-xs-12'>
-                <img src={message2} width="50" height="50" className='message-img'/>
-                <p className='span-text'>You will definitely receive an invoice by e-mail<br/> or from the driver.</p>
+                <img src={message2} width="50" height="50" className='message-img' />
+                <p className='span-text'>You will definitely receive an invoice by e-mail<br /> or from the driver.</p>
               </div>
               <div className='col-md-4 col-xs-12'>
                 <img src={message3} width="50" height="50" className='message-img' />
                 <p className='span-text'>Alternatively, you can use our simple chat service via WhatsApp +49 174 8790930</p>
               </div>
+
+
+
             </div>
           </div>
         </div>
-
-
-
       </div>
+      <div className='row py-2'>
+              <div className='col-md-6'>
+                <img src={couple} width='100%' /> 
+              </div>
+              <div className='col-md-6'>
+                <h3> Advantage of using airport transfer </h3>
+                <p>You are the only booked passenger in the Shuttle, so that we can find the fastest way to your destination.</p>
+                <p>Pay either in advance or on the spot to the driver with no unexpected costs or surprises.</p>
+                <p>Transfer services 24/7 customer service</p>
+                <p>We are up to 40% cheaper than other local taxi services.</p>
+              </div>
+            </div>
     </div>
   </>)
 }
