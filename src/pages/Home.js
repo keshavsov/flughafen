@@ -63,8 +63,8 @@ export default function Home() {
             <button className='btn btn-primary w-100'>Book Now</button>
           </form>
         </div>
-        <div className='col  col-md-5 my-4 white-card'>
-          <img src={home1} alt="no img" height="430rem" style={{ width: "auto" }} />
+        <div className='col  col-md-5 my-4 white-card' style={{placeContent:"center",display:"grid"}}>
+          <img src={home1} alt="no img" height="430rem"  />
         </div>
       </div>
       <duv className="container ">
@@ -114,7 +114,7 @@ export default function Home() {
         <div className='row py-4'>
           <center>
             <div>
-              <h4> How it works?</h4>
+              <h2> How it works?</h2>
               <p className="span text-dark">The easiest way to book and arrive to your  desired<br /> destination from/to the airport.</p>
             </div>
           </center>
@@ -142,7 +142,7 @@ export default function Home() {
       <div className='row'>
         <div className='col-md-7 col-sm-12 col-xs-6 bg-white px-5'>
           <div>
-            <h4><span style={{ color: "#1C2124" }}>Advantages of using Blu</span> <br /><span style={{ color: "#0E4672" }}> Airport Transfer</span></h4>
+            <span style={{ color: "#1C2124" }}><h2>Advantages of using Blu</h2></span> <br /><span style={{ color: "#0E4672" }}> Airport Transfer</span>
           </div>
           <div>
             <p className='p'>You are the <span className='span'>only passenger booked in the cab</span>, so we will find the <span>fastest way to your destination</span>.</p>
@@ -187,16 +187,16 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='row py-2'>
+      <div className='row py-3 mx-3'>
               <div className='col-md-6'>
-                <img src={couple} width='100%' /> 
+                <img src={couple} width='500px'  /> 
               </div>
               <div className='col-md-6'>
-                <h3> Advantage of using airport transfer </h3>
-                <p>You are the only booked passenger in the Shuttle, so that we can find the fastest way to your destination.</p>
-                <p>Pay either in advance or on the spot to the driver with no unexpected costs or surprises.</p>
-                <p>Transfer services 24/7 customer service</p>
-                <p>We are up to 40% cheaper than other local taxi services.</p>
+                <h2> Advantage of using airport <br/> transfer </h2> <br/>
+                <p className=' p'>You are the only booked passenger in the Shuttle, so that we can find the fastest way to your destination.</p>
+                <p className=' p'>Pay either in advance or on the spot to the driver with no unexpected costs or surprises.</p>
+                <p className=' p'>Transfer services 24/7 customer service</p>
+                <p className=' p'>We are up to 40% cheaper than other local taxi services.</p>
               </div>
             </div>
     </div>

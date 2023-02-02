@@ -32,18 +32,18 @@ body {
   /* color:#0E4672; */
   color:#0b74c5;
   font-size: 19px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 .span-text{
-  font-size: medium;
-    font-weight: normal;
+  font-size:large;
+    font-weight: bolder;
     text-align: center;
     
 }
 .p{
   color:#000000;
-  font-size: medium;
-    font-weight:bold;
+  font-size:larger;
+    font-weight:bolder;
 }
 
 .message-img{
@@ -61,7 +61,59 @@ body {
     left: 50px;
     /* font-family: serif; */
     font-weight: bolder;
-    font-size: medium;
+    font-size:large;
     object-fit: contain;
+  }
+
+  .footer-text{
+    font-size: 22px;
+    font-weight: bolder
+  }
+    .footer-text-header{
+      font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 36px;
+
+color: #FFFFFF;
+    }
+    .footer-blog-text{
+      font-family: 'DM Sans';
+font-style: normal;
+font-weight: 350;
+font-size: 20.3px;
+line-height: 23px;
+
+color: #FFFFFF;
+    }
+    h2{
+      font-family: 'DM Sans';
+      font-Size:"larger";
+      font-weight:"700"
+    }
+
+/* Over Ride Stepper */
+.MuiStepLabel-root .MuiSvgIcon-root {
+  font-size: 3rem;
+}
+
     
+.puls-minus-btn-darkblue {
+  border-top-left-radius: 1.2rem;
+  border-bottom-left-radius: 1.2rem;
+  background-color:#1F3648;
+  text-align: center;
+  color: #fff;
+  padding: 3px;
+  font-size: 1.5rem
+}
+.puls-minus-btn-skyblue {
+  border-top-right-radius: 1.2rem;
+  border-bottom-right-radius: 1.2rem;
+  background-color: #C2DDF2;
+  color: #1F3648;
+  text-align: center;
+  padding: 3px;
+  font-size: 1.5rem
 }

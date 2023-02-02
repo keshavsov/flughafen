@@ -75,7 +75,7 @@ export default class Example extends React.Component {
                 <NavLink href="https://github.com/reactstrap/reactstrap" className='span-text'>Imprint</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap" >News & Updates</NavLink>
+                <NavLink href="https://github.com/reactstrap/reactstrap" className='span-text'>News & Updates</NavLink>
               </NavItem>
               {/* <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
