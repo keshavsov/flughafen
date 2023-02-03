@@ -85,10 +85,10 @@ const rows = [
   createData('Cupcake', 305, 3.7),
   createData('Donut', 452, 25.0),
   createData('Eclair', 262, 16.0),
-  
+
 ].sort((a, b) => (a.calories < b.calories ? -1 : 1));
 
-export  function TableVehicle() {
+export function TableVehicle() {
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
 
@@ -103,13 +103,15 @@ export  function TableVehicle() {
           ).map((row) => (
             <TableRow key={row.name}>
               <TableCell component="th" scope="row">
+
                 {row.name}
               </TableCell>
               <TableCell>
                 <PlusMinusBtn />
               </TableCell>
               <TableCell>
-                {row.fat}
+                {/* {row.fat} */}
+                <Tablecellbutten />
               </TableCell>
             </TableRow>
           ))}
@@ -119,11 +121,21 @@ export  function TableVehicle() {
   );
 }
 
-const PlusMinusBtn = ({onClickPlus, onClickMinus}) => { 
+const PlusMinusBtn = ({ onClickPlus, onClickMinus }) => {
   return (
-    <div className='rounded-pill bg-secondary d-flex' style={{}}>
+    <div className='rounded-pill bg-secondary d-flex' >
       <span className='w-50 puls-minus-btn-darkblue' onClick={onClickPlus}>+</span>
       <span className='w-50 puls-minus-btn-skyblue' onClick={onClickMinus}>-</span>
     </div>
   )
 };
+
+const Tablecellbutten = () => {
+  return (
+    <div style={{ display: "grid", placeContent: "center" }}>
+
+      <butto className=" btn btn-primary ">Wahlen</butto>
+    </div>
+  
+  )
+}

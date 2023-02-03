@@ -5,19 +5,19 @@ import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
 
 const steps = [
-  'Booking Details',
+ 'Booking Details',
   'Vehicle option',
   'Kontakt-Information',
   'Summary',
 ];
 
-export default function HorizontalLabelPositionBelowStepper() {
+export default function Stapper() {
   return (
     <Box sx={{ width: '100%', my: 4 }}>
       <Stepper activeStep={1} alternativeLabel sx={{height: '5rem'}}>
         {steps.map((label) => (
           <Step key={label}>
-            <StepLabel>{label}</StepLabel>
+            <StepLabel ><b>{label}</b></StepLabel>
           </Step>
         ))}
       </Stepper>

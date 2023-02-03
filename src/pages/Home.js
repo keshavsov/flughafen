@@ -12,6 +12,7 @@ import group4 from '../Assets/Images/Group64(1).png'
 import group5 from '../Assets/Images/Group64(2).png'
 import couple from '../Assets/Images/couple.png'
 import SvgImages from '../Assets/Images/svgImages';
+// import {StaticTimePickerDemo} from '../component/Elements/Timer'
 const { Location } = SvgImages;
 
 export default function Home() {
@@ -27,7 +28,7 @@ export default function Home() {
               </div>
               <div className='col col-md-6 col-sm-12' >
                 <label > time</label> <br />
-                <input type="time" id="time" />
+                {/* <StaticTimePickerDemo/> */}
               </div>
             </div>
             <label>From</label>
@@ -142,7 +143,7 @@ export default function Home() {
       <div className='row'>
         <div className='col-md-7 col-sm-12 col-xs-6 bg-white px-5'>
           <div>
-            <span style={{ color: "#1C2124" }}><h2>Advantages of using Blu</h2></span> <br /><span style={{ color: "#0E4672" }}> Airport Transfer</span>
+            <h2>Advantages of using Blu <br /><span className='span'style={{fontSize:"inherit"}} > Airport Transfer</span></h2>
           </div>
           <div>
             <p className='p'>You are the <span className='span'>only passenger booked in the cab</span>, so we will find the <span>fastest way to your destination</span>.</p>
