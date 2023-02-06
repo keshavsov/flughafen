@@ -157,8 +157,18 @@ color: #000000;
   font-style: normal;
   font-weight: 700;
   font-size: 25.0571px;
-  /* line-height: 26px; */
+  line-height: 26px;
   margin-top: 15px;
   color: #FFFFFF;
   
 }
+.thanku{
+  font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 65px;
+color: #1F3648;
+}
+
+

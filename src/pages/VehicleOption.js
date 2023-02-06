@@ -13,7 +13,6 @@ import buttonIcon4 from '../Assets/Images/package.png'
 import minibus from '../Assets/Images/img_minibus.png'
 import user from '../Assets/Images/user1.png'
 import bag from '../Assets/Images/bag1.png'
-// import { TextField } from '@mui/material';
 
 export function VehicleOption() {
 
@@ -34,8 +33,8 @@ export function VehicleOption() {
                 <div className='row'>
                     <div className='col-md-3 text-white' style={{ background: "#1A1F23" }}>
                         <p className='vehicle-option-sider-text'>Zusammenfassung</p>
-                        <Stack spacing={2}>
-                            <TextField label="Servicetype" variant="standard" />
+                        <Stack spacing={2} >
+                            <TextField color='error' label="Servicetype" variant="standard" />
                             <TextField label="Ubertragungsart" variant="standard" />
                             <TextField label="Ubertragungsart" variant="standard" />
                             <TextField label="Abholadrsse-Zleladresse" variant="standard" />

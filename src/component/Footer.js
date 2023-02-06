@@ -10,24 +10,25 @@ const { LocationSvg, ContactSvg, AvatarSvg } = SvgImages;
 export function Footer() {
   return (<>
     <footer className="bd-footer position-relative py-5 mt-5 " style={{ backgroundColor: "#11191F" }} >
-      <div className='container p-5 rounded position-absolute' style={{ background: "#0E4672",left: '14rem', top: "-75px",}}>
-        <div className='row text-white '>
-          <div className='col-md-4 col-xs-6' >
-            <AvatarSvg height='20' width='20' />
-            <b className='footer-text'> Robeena Butt </b>
-          </div>
-          <div className='col-md-4 col-xs-6' >
+      <div className="position-absolute w-100" style={{ top: "-75px" }}>
+        <div className='container p-5 rounded ' style={{ background: "#0E4672" }}>
+          <div className='row text-white'>
+            <div className='col-md-4 text-center p-1' >
+              <AvatarSvg height='20' width='20' />
+              <b className='footer-text'> Robeena Butt </b>
+            </div>
+            <div className='col-md-4 text-center p-1' >
               <ContactSvg height='20' width='20' />
-            <b className='footer-text'>+49 178 8404957</b>
-          </div>
-            
-          <div className='col-md-4 col-xs-6' >
-            
-              <LocationSvg height='20' width='20' />
-             <b className='footer-text'> Location</b>
-            
-          </div>
+              <b className='footer-text'>+49 178 8404957</b>
+            </div>
 
+            <div className='col-md-4 text-center p-1' >
+              <LocationSvg height='20' width='20' />
+              <b className='footer-text'> Location</b>
+
+            </div>
+
+          </div>
         </div>
       </div>
       <div className="container">
@@ -64,19 +65,21 @@ export function Footer() {
 
         </div>
       </div>
-      
+
     </footer>
-   
+
     <div className='row white-card p-1 px-3'>
-        <div className='col-md-5'>
-          <img src={twitter} width="7%" />
-          <img src={instagram} width="7%" />
-          <img src={facebook} width="7%" />
-        </div>
-        <div className='col-md-7'>
-          <img src={image11}   style={{width:" -webkit-fill-available"}}   />
-        </div>
+      <div className='col-md-5 gx-3'>
+      
+        <img src={twitter} width="7%"/>
+        <img src={instagram} width="7%" />
+        <img src={facebook} width="7%" />
+        
       </div>
+      <div className='col-md-7'>
+        <img src={image11} style={{ width: " -webkit-fill-available", }} />
+      </div>
+    </div>
 
 
   </>)

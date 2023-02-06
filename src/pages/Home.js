@@ -12,60 +12,91 @@ import group4 from '../Assets/Images/Group64(1).png'
 import group5 from '../Assets/Images/Group64(2).png'
 import couple from '../Assets/Images/couple.png'
 import SvgImages from '../Assets/Images/svgImages';
-// import {StaticTimePickerDemo} from '../component/Elements/Timer'
+import { BasicTimePicker } from '../component/Elements/Timer'
+import { ResponsiveDatePickers } from '../component/Elements/Date'
+import { Box, FormControl, InputLabel, MenuItem, Select, TextField } from '@mui/material'
 const { Location } = SvgImages;
 
 export default function Home() {
+  const [journey, setJourney] = React.useState('');
+  const [extraTime, setExtraTime] = React.useState('');
+
+  const handleJourney = (event) => {
+    setJourney(event.target.value);
+  };
+  const handleExtraTime = (event) => {
+    setExtraTime(event.target.value);
+  };
   return (<>
     <div className='container-fluid bg-white'>
       <div className='row m-3'>
         <div className='col col-md-7 col-sm-12 rounded my-3  p-3'>
           <form >
-            <div className='row'>
-              <div className='col col-md-6 col-sm-12'>
-                <label > date</label> <br />
-                <input type="date" id="date" />
+            <div className='row my-5'>
+              <div className='col-md-6 col-sm-12'>
+
+                <ResponsiveDatePickers />
               </div>
-              <div className='col col-md-6 col-sm-12' >
-                <label > time</label> <br />
-                {/* <StaticTimePickerDemo/> */}
+              <div className='col-md-6 col-sm-12' >
+                <BasicTimePicker />
               </div>
             </div>
-            <label>From</label>
-            <input type="email" class="form-control" />
-            <label >TO</label>
-            <input type="email" class="form-control" />
+            <div className='row my-5'>
+              <div className='col-md-6 col-sm-12'>
+                <TextField spacing={4} label="From" variant='filled' fullWidth />
+              </div>
 
-            <div className='row'>
+              <div className='col-md-6 col-sm-12'>
+                <TextField spacing={4} label="To" variant='filled' fullWidth />
+              </div>
+            </div>
+            <div className='row my-5'>
               <div className='col col-md-6 col-sm-12 '>
-                <label>JOURNEY TYPE</label>
-                <select className='w-100 '>
-                  <option>......</option>
-                  <option>dfsf</option>
-                  <option>dfsf</option>
-                  <option>dfsf</option>
-                  <option>dfsf</option>
-                  <option>dfsf</option>
-                </select>
+
+                <Box spacing={4}>
+                  <FormControl fullWidth>
+                    <InputLabel id="JOURNEY TYPE">JOURNEY TYPE</InputLabel>
+                    <Select
+                      labelId="demo-simple-select-label"
+
+                      value={journey}
+                      label="JOURNEY TYPE"
+                      onChange={handleJourney}
+                    >
+                      <MenuItem value={10}>Ten</MenuItem>
+                      <MenuItem value={20}>Twenty</MenuItem>
+                      <MenuItem value={30}>Thirty</MenuItem>
+                    </Select>
+                  </FormControl>
+                </Box>
               </div>
 
               <div className='col col-md-6 col-sm-12 '>
-                <label>EXTRA TIME</label>
-                <select className='w-100'>
-                  <option>........</option>
-                  <option>asgad</option>
-                  <option>asgad</option>
-                  <option>asgad</option>
-                  <option>asgad</option>
-                </select>
+                <Box>
+                  <FormControl fullWidth>
+                    <InputLabel id="JOURNEY TYPE">EXTRA TIME</InputLabel>
+                    <Select
+                      value={extraTime}
+                      label="EXTRA TIME"
+                      onChange={handleExtraTime}
+                    >
+                      <MenuItem value={10}>Ten</MenuItem>
+                      <MenuItem value={20}>Twenty</MenuItem>
+                      <MenuItem value={30}>Thirty</MenuItem>
+                    </Select>
+                  </FormControl>
+                </Box>
               </div>
             </div>
             <p></p>
+
             <button className='btn btn-primary w-100'>Book Now</button>
+
+
           </form>
         </div>
-        <div className='col  col-md-5 my-4 white-card' style={{placeContent:"center",display:"grid"}}>
-          <img src={home1} alt="no img" height="430rem"  />
+        <div className='col  col-md-5 my-4 white-card' style={{ placeContent: "center", display: "grid" }}>
+          <img src={home1} alt="no img" height="430rem" />
         </div>
       </div>
       <duv className="container ">
@@ -143,7 +174,7 @@ export default function Home() {
       <div className='row'>
         <div className='col-md-7 col-sm-12 col-xs-6 bg-white px-5'>
           <div>
-            <h2>Advantages of using Blu <br /><span className='span'style={{fontSize:"inherit"}} > Airport Transfer</span></h2>
+            <h2>Advantages of using Blu <br /><span className='span' style={{ fontSize: "inherit" }} > Airport Transfer</span></h2>
           </div>
           <div>
             <p className='p'>You are the <span className='span'>only passenger booked in the cab</span>, so we will find the <span>fastest way to your destination</span>.</p>
@@ -189,17 +220,17 @@ export default function Home() {
         </div>
       </div>
       <div className='row py-3 mx-3'>
-              <div className='col-md-6'>
-                <img src={couple} width='500px'  /> 
-              </div>
-              <div className='col-md-6'>
-                <h2> Advantage of using airport <br/> transfer </h2> <br/>
-                <p className=' p'>You are the only booked passenger in the Shuttle, so that we can find the fastest way to your destination.</p>
-                <p className=' p'>Pay either in advance or on the spot to the driver with no unexpected costs or surprises.</p>
-                <p className=' p'>Transfer services 24/7 customer service</p>
-                <p className=' p'>We are up to 40% cheaper than other local taxi services.</p>
-              </div>
-            </div>
+        <div className='col-md-6'>
+          <img src={couple} width='500px' />
+        </div>
+        <div className='col-md-6'>
+          <h2> Advantage of using airport <br /> transfer </h2> <br />
+          <p className=' p'>You are the only booked passenger in the Shuttle, so that we can find the fastest way to your destination.</p>
+          <p className=' p'>Pay either in advance or on the spot to the driver with no unexpected costs or surprises.</p>
+          <p className=' p'>Transfer services 24/7 customer service</p>
+          <p className=' p'>We are up to 40% cheaper than other local taxi services.</p>
+        </div>
+      </div>
     </div>
   </>)
 }
