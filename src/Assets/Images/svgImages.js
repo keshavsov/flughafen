@@ -1,3 +1,4 @@
+
 export default {
 
 LocationSvg: ({width = '16', height = '16'}) => <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
@@ -14,4 +15,22 @@ AvatarSvg: ({width = '16', height = '16'}) => <svg xmlns="http://www.w3.org/2000
 <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"/>
 </svg>,
 
+GernamySvg: ({width = '27', height = '27'}) => <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} id="flag-icons-de" viewBox="0 0 512 512">
+<path fill="#ffce00" d="M0 341.3h512V512H0z"/>
+<path d="M0 0h512v170.7H0z"/>
+<path fill="#d00" d="M0 170.7h512v170.6H0z"/>
+</svg>,
+
+BritainSvg: ({width = '27', height = '27'}) =>  <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} id="flag-icons-gb" viewBox="0 0 512 512">
+<path fill="#012169" d="M0 0h512v512H0z"/>
+<path fill="#FFF" d="M512 0v64L322 256l190 187v69h-67L254 324 68 512H0v-68l186-187L0 74V0h62l192 188L440 0z"/>
+<path fill="#C8102E" d="m184 324 11 34L42 512H0v-3l184-185zm124-12 54 8 150 147v45L308 312zM512 0 320 196l-4-44L466 0h46zM0 1l193 189-59-8L0 49V1z"/>
+<path fill="#FFF" d="M176 0v512h160V0H176zM0 176v160h512V176H0z"/>
+<path fill="#C8102E" d="M0 208v96h512v-96H0zM208 0v512h96V0h-96z"/>
+</svg>,
+
+EditIcon:({width = '30', height = '30'})=> <svg xmlns="http://www.w3.org/2000/svg" width={width} height={width} fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+<path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+<path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+</svg>
 }

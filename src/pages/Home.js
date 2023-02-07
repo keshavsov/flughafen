@@ -14,13 +14,14 @@ import couple from '../Assets/Images/couple.png'
 import SvgImages from '../Assets/Images/svgImages';
 import { BasicTimePicker } from '../component/Elements/Timer'
 import { ResponsiveDatePickers } from '../component/Elements/Date'
-import { Box, FormControl, InputLabel, MenuItem, Select, TextField } from '@mui/material'
+import { Box, FormControl, InputLabel, MenuItem, Select, TextField } from '@mui/material';
+import { useTranslation } from "react-i18next";
 const { Location } = SvgImages;
 
 export default function Home() {
   const [journey, setJourney] = React.useState('');
   const [extraTime, setExtraTime] = React.useState('');
-
+  const { t } = useTranslation();
   const handleJourney = (event) => {
     setJourney(event.target.value);
   };

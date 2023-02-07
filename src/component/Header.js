@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../Assets/Images/logo.png'
+import  TranslateDropdown from '../component/Elements/TranslateDropdown'
 import {
   Collapse,
   Navbar,
@@ -13,6 +14,7 @@ import {
   // DropdownMenu,
   // DropdownItem
 } from 'reactstrap';
+import Button from '@mui/material/Button';
 import DropdownElement from '../component/Elements/DropdownElement'
 
 
@@ -103,11 +105,12 @@ export default class Example extends React.Component {
               <button type="button" class="btn btn-outline">Login</button>
             </div>
             <div>
-              <button type="button" class="btn btn-primary">Registration</button>
+              <Button size='large'  variant="contained">Registration</Button>
             </div>
             <DropdownElement />
 
           </div>
+          <TranslateDropdown/>
         </Navbar>
       </div>
     );

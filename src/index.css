@@ -171,4 +171,8 @@ line-height: 65px;
 color: #1F3648;
 }
 
+.custom-select:focus {
+  outline: none;
+}  
+
 

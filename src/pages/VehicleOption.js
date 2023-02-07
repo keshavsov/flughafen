@@ -13,9 +13,11 @@ import buttonIcon4 from '../Assets/Images/package.png'
 import minibus from '../Assets/Images/img_minibus.png'
 import user from '../Assets/Images/user1.png'
 import bag from '../Assets/Images/bag1.png'
-
+import svgImages from '../Assets/Images/svgImages'
+import { useTranslation } from 'react-i18next'
 export function VehicleOption() {
-
+    const { t } = useTranslation();
+const {EditIcon} =svgImages;
     return (
         <>
             <div className='container-fluid' >
@@ -30,9 +32,12 @@ export function VehicleOption() {
                         <Stapper />
                     </div>
                 </div>
-                <div className='row'>
-                    <div className='col-md-3 text-white' style={{ background: "#1A1F23" }}>
-                        <p className='vehicle-option-sider-text'>Zusammenfassung</p>
+                <div className='row '>
+                    <div className='col-md-3 text-white p-4' style={{ background: "#1A1F23" }}>
+                        <span className='vehicle-option-sider-text'>{t('Zfassung')}</span>
+                        <span className='mx-5'>
+                           <EditIcon/>
+                        </span>
                         <Stack spacing={2} >
                             <TextField color='error' label="Servicetype" variant="standard" />
                             <TextField label="Ubertragungsart" variant="standard" />
@@ -71,7 +76,7 @@ export function VehicleOption() {
                                     </div>
                                     <div className=' card-text p-3'>
                                         <p>€226.78</p>
-                                        <butto className=" btn btn-primary">Wahlen</butto>
+                                        <button className=" btn btn-primary">{t('wah')}</button>
                                     </div>
                                 </div>
 
@@ -90,7 +95,7 @@ export function VehicleOption() {
                                     </div>
                                     <div className='card-text p-3'>
                                         <p>€226.78</p>
-                                        <butto className=" btn btn-primary">Wahlen</butto>
+                                        <button className=" btn btn-primary">{t('wah')}</button>
                                     </div>
                                 </div>
 
@@ -102,16 +107,16 @@ export function VehicleOption() {
                     <div className='col-md-3 '>
                         <h2>Payment List</h2>
                         <div className='d-flex justify-content-evenly'>
-                            <div className='p'><b>Extra Optionen</b></div>
+                            <div className='p'><b> {t('extopt')}</b></div>
                             <div className='p'><b>$223.00</b></div>
                         </div>
                         <div className='d-flex justify-content-evenly'>
-                            <div className='p'><b>Ausgewahltes Fahrzeug</b></div>
+                            <div className='p'><b>{t('AusgetF')}</b></div>
                             <div className='p'><b>$223.00</b></div>
                         </div>
                         <div className='text-center' ><hr></hr></div>
                         <div className='d-flex justify-content-evenly'>
-                            <div className='Gesamt-text'>Gesamt</div>
+                            <div className='Gesamt-text'>{t('gesamt')}</div>
                             <div className='Gesamt-text'><b>$223.00</b></div>
                         </div>
                         <div className='mt-4'>

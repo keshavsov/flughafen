@@ -15,6 +15,7 @@ import FirstPageIcon from '@mui/icons-material/FirstPage';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import LastPageIcon from '@mui/icons-material/LastPage';
+import {useTranslation} from 'react-i18next'
 
 function TablePaginationActions(props) {
   const theme = useTheme();
@@ -131,10 +132,12 @@ const PlusMinusBtn = ({ onClickPlus, onClickMinus }) => {
 };
 
 const Tablecellbutten = () => {
+  const {t}= useTranslation()
+
   return (
     <div style={{ display: "grid", placeContent: "center" }}>
 
-      <butto className=" btn btn-primary ">Wahlen</butto>
+      <butto className=" btn btn-primary ">{t('wah')}</butto>
     </div>
   
   )

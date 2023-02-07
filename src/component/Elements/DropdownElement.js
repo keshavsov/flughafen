@@ -1,38 +1,30 @@
-import React, { useState } from 'react';
-import {
-  Dropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-} from 'reactstrap';
-import PropTypes from 'prop-types';
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 
-function DropdownElement({ direction, ...args }) {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+export default function BasicSelect() {
+  const [age, setAge] = React.useState('Become Partner');
 
-  const toggle = () => setDropdownOpen((prevState) => !prevState);
+  const handleChange = (event) => {
+    setAge(event.target.value);
+  };
 
   return (
-    <>
-      <Dropdown isOpen={dropdownOpen} toggle={toggle} direction={direction}>
-        <DropdownToggle caret>Dropdown</DropdownToggle>
-        <DropdownMenu {...args}>
-          <DropdownItem header>Header</DropdownItem>
-          <DropdownItem >Some Action</DropdownItem>
-          <DropdownItem text>Dropdown Item Text</DropdownItem>
-          <DropdownItem disabled>Action (disabled)</DropdownItem>
-          <DropdownItem divider />
-          <DropdownItem>Foo Action</DropdownItem>
-          <DropdownItem>Bar Action</DropdownItem>
-          <DropdownItem>Quo Action</DropdownItem>
-        </DropdownMenu>
-      </Dropdown>
-    </>
+    <Box sx={{ minWidth: 120 }}>
+      <FormControl fullWidth>
+        <Select
+          size='small'
+          onChange={handleChange}
+          value='Become Partner'
+        >
+          <MenuItem value='Become Partner' >Become Partner</MenuItem>
+          <MenuItem value={20}>Twenty</MenuItem>
+          <MenuItem value={30}>Thirty</MenuItem>
+        </Select>
+      </FormControl>
+    </Box>
   );
 }
-
-DropdownElement.propTypes = {
-  direction: PropTypes.string,
-};
-
-export default DropdownElement;

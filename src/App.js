@@ -4,7 +4,7 @@ import LayoutI from "./component/LayoutI";
 import Home from "./pages/Home";
 import {Footer} from './component/Footer'
 import {VehicleOption} from './pages/VehicleOption'
-import {Done} from './pages/Done'
+import {Done} from './pages/Done';
 
 function App() {
   const routes = useRoutes([
@@ -16,7 +16,8 @@ function App() {
 
   ]);
 
-  return (<LayoutI>
+  return (
+  <LayoutI>
   {routes}
   </LayoutI>)
 }
