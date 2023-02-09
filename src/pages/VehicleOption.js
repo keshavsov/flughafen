@@ -15,9 +15,10 @@ import user from '../Assets/Images/user1.png'
 import bag from '../Assets/Images/bag1.png'
 import svgImages from '../Assets/Images/svgImages'
 import { useTranslation } from 'react-i18next'
+import { PaymentList } from '../component/PaymentList'
 export function VehicleOption() {
     const { t } = useTranslation();
-const {EditIcon} =svgImages;
+    const { EditIcon } = svgImages;
     return (
         <>
             <div className='container-fluid' >
@@ -33,10 +34,12 @@ const {EditIcon} =svgImages;
                     </div>
                 </div>
                 <div className='row '>
-                    <div className='col-md-3 text-white p-4' style={{ background: "#1A1F23" }}>
+                    <div className='col-md-3 text-white p-4' style={{ background: "#1A1F23", marginBottom: "auto" }}>
                         <span className='vehicle-option-sider-text'>{t('Zfassung')}</span>
                         <span className='mx-5'>
-                           <EditIcon/>
+                            {/* <EditIcon /> */}
+                            <div style={{textAlign:"end"}}><button className='btn rounded-pill bg-white px-4 '> <b>Edit</b> </button></div>
+
                         </span>
                         <Stack spacing={2} >
                             <TextField color='error' label="Servicetype" variant="standard" />
@@ -105,25 +108,11 @@ const {EditIcon} =svgImages;
                     </div>
 
                     <div className='col-md-3 '>
-                        <h2>Payment List</h2>
-                        <div className='d-flex justify-content-evenly'>
-                            <div className='p'><b> {t('extopt')}</b></div>
-                            <div className='p'><b>$223.00</b></div>
-                        </div>
-                        <div className='d-flex justify-content-evenly'>
-                            <div className='p'><b>{t('AusgetF')}</b></div>
-                            <div className='p'><b>$223.00</b></div>
-                        </div>
-                        <div className='text-center' ><hr></hr></div>
-                        <div className='d-flex justify-content-evenly'>
-                            <div className='Gesamt-text'>{t('gesamt')}</div>
-                            <div className='Gesamt-text'><b>$223.00</b></div>
-                        </div>
-                        <div className='mt-4'>
-                            <button className="btn btn-primary w-100"  >Continue</button>
-                        </div>
 
+                        <PaymentList />
                     </div>
+
+
 
 
                 </div>

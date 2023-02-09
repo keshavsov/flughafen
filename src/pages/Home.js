@@ -33,15 +33,7 @@ export default function Home() {
       <div className='row m-3'>
         <div className='col col-md-7 col-sm-12 rounded my-3  p-3'>
           <form >
-            <div className='row my-5'>
-              <div className='col-md-6 col-sm-12'>
-
-                <ResponsiveDatePickers />
-              </div>
-              <div className='col-md-6 col-sm-12' >
-                <BasicTimePicker />
-              </div>
-            </div>
+           
             <div className='row my-5'>
               <div className='col-md-6 col-sm-12'>
                 <TextField spacing={4} label="From" variant='filled' fullWidth />
@@ -49,6 +41,18 @@ export default function Home() {
 
               <div className='col-md-6 col-sm-12'>
                 <TextField spacing={4} label="To" variant='filled' fullWidth />
+              </div>
+            </div>
+           
+            <details>
+              <summary className='span'>More Details</summary>
+            <div className='row my-5'>
+              <div className='col-md-6 col-sm-12'>
+
+                <ResponsiveDatePickers />
+              </div>
+              <div className='col-md-6 col-sm-12' >
+                <BasicTimePicker />
               </div>
             </div>
             <div className='row my-5'>
@@ -89,6 +93,7 @@ export default function Home() {
                 </Box>
               </div>
             </div>
+            </details>
             <p></p>
 
             <button className='btn btn-primary w-100'>Book Now</button>

@@ -9,9 +9,10 @@ import image11 from '../Assets/Images/img_image11.png'
 const { LocationSvg, ContactSvg, AvatarSvg } = SvgImages;
 export function Footer() {
   return (<>
-    <footer className="bd-footer position-relative py-5 mt-5 " style={{ backgroundColor: "#11191F" }} >
+  <div style={{marginTop:"10%"}}>
+    <footer className="bd-footer position-relative py-3 mt-5 " style={{ backgroundColor: "#11191F" }} >
       <div className="position-absolute w-100" style={{ top: "-75px" }}>
-        <div className='container p-5 rounded ' style={{ background: "#0E4672" }}>
+        <div className='container p-5  rounded ' style={{ background: "#0E4672" }}>
           <div className='row text-white'>
             <div className='col-md-4 text-center p-1' >
               <AvatarSvg height='20' width='20' />
@@ -67,7 +68,6 @@ export function Footer() {
       </div>
 
     </footer>
-
     <div className='row white-card p-1 px-3'>
       <div className='col-md-5 gx-3'>
       
@@ -80,6 +80,8 @@ export function Footer() {
         <img src={image11} style={{ width: " -webkit-fill-available", }} />
       </div>
     </div>
+    </div>
+
 
 
   </>)

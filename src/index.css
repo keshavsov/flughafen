@@ -2,12 +2,14 @@
   --primary: #0E4672;
   --shadow: 0px 4px 4px -2px rgba(14, 70, 114, 0.3)
 }
+
 body {
-  margin:0;
+  margin: 0;
   padding: 0;
   background: whitesmoke;
   font-size: 14px;
 }
+
 /* Override */
 
 .btn-primary {
@@ -18,111 +20,122 @@ body {
 .white-card {
   background: #FFFFFF;
   border-bottom: 1px solid #E0E0E0;
-  box-shadow: var(--shadow)
+  box-shadow: var(--shadow);
+  /* padding-bottom: 4rem; */
 }
 
-.vertical-line{
+.vertical-line {
   margin-top: 20px;
   border-left: 2px solid slategrey;
   height: 180px;
 }
+
 /*  */
-.vertical-line:hover{
-  background-color:1px solid blue;
+.vertical-line:hover {
+  background-color: 1px solid blue;
 }
-.span{
+
+.span {
   /* color:#0E4672; */
-  color:#0b74c5;
+  color: #0b74c5;
   font-size: 22.7236px;
   font-weight: 700;
 }
-.span-text{
-  font-size:17.7236px;
+
+.span-text {
+  font-size: 17.7236px;
   font-weight: 700;
-    text-align: center;
-    
+  text-align: center;
+
 }
-.p{
+
+.p {
   font-family: 'DM Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 22.7236px;
-line-height: 33px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22.7236px;
+  line-height: 33px;
 
-color: #000000;
+  color: #000000;
 
 }
 
-.message-img{
+.message-img {
   margin-left: 145px;
 }
 
 .col.text-white.d-flex.mx-5.styleShadow {
   box-shadow: -1px 37px 0px 10px #0F3756;
 }
-.shadow2{
+
+.shadow2 {
   box-shadow: 0px 39px 1px -17px #0f3756
 }
-.text-position{
+
+.text-position {
   bottom: 20px;
-    left: 50px;
-    font-family: 'DM Sans';
-font-style: normal;
-font-weight: 500;
-font-size: 23.4889px;
-line-height: 31px;
+  left: 50px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23.4889px;
+  line-height: 31px;
 
-color: #000000;
-  }
+  color: #000000;
+}
 
-  .footer-text{
-    font-family: 'DM Sans';
-    font-size: 22px;
-    font-weight: 700
-  }
-    .footer-text-header{
-      font-family: 'DM Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 28px;
-line-height: 36px;
+.footer-text {
+  font-family: 'DM Sans';
+  font-size: 22px;
+  font-weight: 700
+}
 
-color: #FFFFFF;
-    }
-    .footer-blog-text{
-      /* font-family: 'DM Sans'; */
-font-size: 18.3px;
-line-height: 23px;
+.footer-text-header {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
 
-color: #FFFFFF;
-    }
-    h2{
-      font-family: 'DM Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 35.2333px;
-line-height: 46px;
-margin: revert;
+  color: #FFFFFF;
+}
+
+.footer-blog-text {
+  /* font-family: 'DM Sans'; */
+  font-size: 18.3px;
+  line-height: 23px;
+
+  color: #FFFFFF;
+}
+
+h2 {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35.2333px;
+  line-height: 46px;
+  margin: revert;
 
 
-    }
+}
 
 /* Over Ride Stepper */
 .MuiStepLabel-root .MuiSvgIcon-root {
   font-size: 3rem;
-  color:var(--primary) ;
+  color: var(--primary);
 }
 
-    
+
 .puls-minus-btn-darkblue {
   border-top-left-radius: 1.2rem;
   border-bottom-left-radius: 1.2rem;
-  background-color:#1F3648;
+  background-color: #1F3648;
   text-align: center;
   color: #fff;
   padding: 3px;
   font-size: 1.5rem
 }
+
 .puls-minus-btn-skyblue {
   border-top-right-radius: 1.2rem;
   border-bottom-right-radius: 1.2rem;
@@ -133,26 +146,28 @@ margin: revert;
   font-size: 1.5rem
 }
 
-.Gesamt-text{
+.Gesamt-text {
   color: #0E4672;
   font-family: 'DM Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 26px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
 }
-.card-text{
+
+.card-text {
   font-family: 'DM Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 31px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
 
-color: #000000;
+  color: #000000;
 
 }
+
 /*  */
-.vehicle-option-sider-text{
+.vehicle-option-sider-text {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
@@ -160,19 +175,18 @@ color: #000000;
   line-height: 26px;
   margin-top: 15px;
   color: #FFFFFF;
-  
+
 }
-.thanku{
+
+.thanku {
   font-family: 'DM Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 65px;
-color: #1F3648;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 65px;
+  color: #1F3648;
 }
 
 .custom-select:focus {
   outline: none;
-}  
-
-
+}
