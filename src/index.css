@@ -190,3 +190,9 @@ h2 {
 .custom-select:focus {
   outline: none;
 }
+
+.link{
+  text-decoration: none;
+  color: gray;
+  padding-right: 2rem;
+}

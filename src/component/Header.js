@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../Assets/Images/logo.png'
-import  TranslateDropdown from '../component/Elements/TranslateDropdown'
+import TranslateDropdown from '../component/Elements/TranslateDropdown'
+import { Box, FormControl, MenuItem, Select } from '@mui/material';
 import {
   Collapse,
   Navbar,
@@ -8,17 +9,15 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  // UncontrolledDropdown,
-  // DropdownToggle,
-  // DropdownMenu,
-  // DropdownItem
+  NavLink
 } from 'reactstrap';
 import Button from '@mui/material/Button';
 import DropdownElement from '../component/Elements/DropdownElement'
+import { Link } from 'react-router-dom';
 
 
 export default class Example extends React.Component {
+  
   constructor(props) {
     super(props);
 
@@ -26,12 +25,18 @@ export default class Example extends React.Component {
     this.state = {
       isOpen: false
     };
+    this.state={
+      dropValue:"Become value"
+    };
   }
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
     });
   }
+   handleChange(e){
+    this.setState({dropValue:e.target.value})
+   }
   render() {
     return (
       <div>
@@ -65,52 +70,56 @@ export default class Example extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/" className='span-text'>Calculate & Price Book</NavLink>
+                <Link to="/home" className='span-text link '>Calculate & Price Book</Link>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap" className='span-text'>About Us</NavLink>
+                <Link to="/vehicle" className='span-text link'>About Us</Link>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap" className='span-text'>Business account</NavLink>
+                <Link to="/contact" className='span-text link'>Business account</Link>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap" className='span-text'>Imprint</NavLink>
+                <Link to="/vehicle" className='span-text link'>Imprint</Link>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap" className='span-text'>News & Updates</NavLink>
+                <Link to="/summary" className='span-text link'>Summary</Link>
               </NavItem>
-              {/* <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Options
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    Option 1
-                  </DropdownItem>
-                  <DropdownItem>
-                    Option 2
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    Reset
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown> */}
+              <NavItem>
+                {/* <NavLink href="https://github.com/reactstrap/reactstrap" className='span-text'>News & Updates</NavLink> */}
+              </NavItem>
 
             </Nav>
 
           </Collapse>
           <div className='d-flex gap-3 '>
             <div>
-              <button type="button" class="btn btn-outline">Login</button>
+              <Link to="/" class="btn btn-outline link"> Login</Link>
+              {/* <Link to="/">Login</Link> */}
             </div>
+            {/* <div>
+              <Link to="/home">Home</Link>
+            </div> */}
             <div>
-              <Button size='large'  variant="contained">Registration</Button>
+              <Button size='large' variant="contained">Registration</Button>
             </div>
-            <DropdownElement />
+            {/* <DropdownElement /> */}
+            <Box >
+              <FormControl fullWidth>
+                <Select
+                  size='small'
+                  onChange={this.handleChange}
+                  value={this.state.dropValue}
+                >
+                  <MenuItem value='Become Partner' >Become Partner</MenuItem>
+                  <MenuItem value='Business Agent'>Business/ Agent</MenuItem>
+                  <MenuItem value='Driver Carrier'>Driver/ Carrier</MenuItem>
+                </Select>
+                <p>{this.state.dropValue}</p>
+              </FormControl>
+            </Box>
 
           </div>
-          <TranslateDropdown/>
+          <TranslateDropdown />
         </Navbar>
       </div>
     );
