@@ -88,7 +88,7 @@ export function ContactInfo() {
                             </div>
                         </div>
                     </div>
-                    <div className='col-md-3 '>
+                    <div className='col-md-3 mb-5'>
                         <PaymentList />
 
 

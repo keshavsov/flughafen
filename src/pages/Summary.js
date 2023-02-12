@@ -99,7 +99,7 @@ export function Summary() {
 
                         </div>
                     </div>
-                    <div className='col-md-3'>
+                    <div className='col-md-3 mb-5'>
                         <div style={{ backgroundColor: "#16191C", padding: "5%" }}>
                             <div className='d-flex justify-content-between'>
                                 <h2 className='vehicle-option-sider-text'>Fahrzeuginfo</h2>

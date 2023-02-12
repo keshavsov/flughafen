@@ -1,6 +1,6 @@
 :root {
   --primary: #0E4672;
-  --shadow: 0px 4px 4px -2px rgba(14, 70, 114, 0.3)
+  --shadow: 0px 4px 4px -2px rgba(14, 70, 114, 0.3);
 }
 
 body {
@@ -8,6 +8,7 @@ body {
   padding: 0;
   background: whitesmoke;
   font-size: 14px;
+  overflow-x: hidden;
 }
 
 /* Override */
@@ -195,4 +196,18 @@ h2 {
   text-decoration: none;
   color: gray;
   padding-right: 2rem;
+}
+
+ /* summary component textfield */
+.custom-textfield input{
+  color: #fff;
+}
+.custom-textfield .Mui-focused{
+  color: #455E72 !important;
+}
+.custom-textfield .MuiInputBase-root:after{
+  border-bottom: #000
+}
+.custom-textfield label{
+  color: #455E72;
 }
