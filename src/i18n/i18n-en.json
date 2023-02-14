@@ -6,5 +6,21 @@
     "wah":"Choose",
     "AusgetF":"Selected vehicle",
     "gesamt":"In total",
-    "extopt":"Extra Options"
+    "extopt":"Extra Options",
+    "contactI":"Contact-Information",
+    "bilADD":"Billing address",
+    "fn":"First name*",
+    "surn":"Surname/Surname*",
+    "tel":"phone number",
+    "remark":"Remarks",
+    "barZ":"Booking Details",
+    "ubert":"transmission type",
+    "dist":"distance",
+    "pickt":"Pickup Date - Time",
+    "estimTravtime":"Estimated travel time",
+    "pickup_destinate_addres":"Pick-up address - destination address",
+    "vehiInfo":"vehicle info",
+    "vehicl":"vehicle",
+    "diskcount":"Do you have a discount code?",
+    "applcode":"Apply code"
   }

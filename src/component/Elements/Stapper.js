@@ -14,7 +14,7 @@ const steps = [
 
 const StepperWrapper = styled('div')(()=>({  
   '& .MuiStepConnector-root' : {
-    top: '1.4rem',
+    top: '1.5rem',
   },
   '& .MuiStepLabel-iconContainer': {
     zIndex: 1

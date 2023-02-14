@@ -6,5 +6,21 @@
     "wah":"Wahlen",
     "AusgetF":"Ausgewahltes Fahrzeug",
     "gesamt":"Gesamt",
-    "extopt":"Extra Optionen"
+    "extopt":"Extra Optionen",
+    "contactI":"Kontakt-Information",
+    "bilADD":"Rechungsadresse",
+    "fn":"Vorname*",
+    "surn":"Familienname/Nachname* ",
+    "tel":"Telefonummer*",
+    "remark":"Bemerkungen",
+    "barZ":"Buchungsdetails",
+    "ubert":"Ubertragungsart",
+    "dist":"Entfernug",
+    "pickt":"Abholdatum - Zeit",
+    "estimTravtime":"Geschatzte Fahrzeit",
+    "pickup_destinate_addres":"Abholadresse - Zieladresse",
+    "vehiInfo":"Fahrzeuginfo",
+    "vehicl":"Fahrzeug",
+    "diskcount":"Haben sie elnen Rabattcode?",
+    "applcode":"Kode Anwenden"
   }

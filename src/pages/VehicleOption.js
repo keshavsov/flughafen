@@ -59,9 +59,9 @@ export function VehicleOption() {
                             <h2 ><img src={buttonIcon3} />Extra Optionen</h2>
                         </div>
 
-                        <div className=' d-flex justify-content-evenly '>
+                        <div className=' d-flex flex-wrap justify-content-evenly  '>
                             <button className="btn btn-primary "><img src={buttonIcon2} /> Child Seat</button>
-                            <button className="btn btn-primary "> <img src={buttonIcon4} />Package</button>
+                            <button className="btn btn-primary "> <img src={buttonIcon4} /> Package </button>
                             <button className="btn btn-primary "> <img src={buttonIcon1} />Wheelchair (Foldable)</button>
                         </div>
                         <TableVehicle />
@@ -74,11 +74,11 @@ export function VehicleOption() {
                                     <img className="card-img-top" src={minibus} alt="Card image cap" style={{ width: "236px", height: "120px" }} />
                                     <div className="card-body p-3 ">
                                         <label className='card-text'>Economy</label>
-                                        <div className='d-flex gap-3 '>
+                                        <div className='d-flex flex-wrap gap-3 '>
                                             <p className='people-bag'><img src={user} /><b> 2 People </b></p>
                                             <p className='people-bag'> <b><img src={bag} /></b><b>4 Bag</b>  </p>
                                         </div>
-                                    
+
                                         <p className='Gesamt-text'>VW Passat, Opel Insignia,<br /> Toyota Avensis</p>
                                     </div>
                                     <div className=' card-text p-3'>
@@ -94,7 +94,7 @@ export function VehicleOption() {
                                     <img className="card-img-top" src={minibus} alt="Card image cap" style={{ width: "236px", height: "120px" }} />
                                     <div className="card-body p-3">
                                         <label className='card-text'>Economy</label>
-                                        <div className='d-flex gap-3 '>
+                                        <div className='d-flex gap-3 flex-wrap'>
                                             <p className='people-bag'><img src={user} /><b> 2 People </b></p>
                                             <p className='people-bag'> <b><img src={bag} /></b><b>4 Bag</b>  </p>
                                         </div>
@@ -111,7 +111,7 @@ export function VehicleOption() {
 
                     </div>
 
-                    <div className='col-md-3 md-5 '>
+                    <div className='col-md-3 mb-5 '>
 
                         <PaymentList />
                     </div>

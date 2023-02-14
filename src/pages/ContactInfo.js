@@ -45,41 +45,41 @@ export function ContactInfo() {
                         </Stack>
                     </div>
                     <div className='col-md-6 white-card p-3 '>
-                        <h2 style={{ backgroundColor: "#E6E6E6", paddingLeft: "10px" }}>Kontakt-Information</h2>
+                        <h2 style={{ backgroundColor: "#E6E6E6", paddingLeft: "10px" }}>{t('contactI')}</h2>
                         <form className='form-control white-card'>
-                            <div className='d-flex'>
+                            <div className='d-flex flex-wrap'>
                                 <div className='col-md-6 p-2'>
-                                    <TextField fullWidth label="Vorname*" variant="standard" />
+                                    <TextField fullWidth label={t('fn')} variant="standard" />
                                 </div>
                                 <div className='col-md-6 p-2'>
-                                    <TextField fullWidth label="Familienname/Nachname*" variant="standard" />
+                                    <TextField fullWidth label={t('surn')} variant="standard" />
 
                                 </div>
                             </div>
-                            <div className='d-flex'>
+                            <div className='d-flex flex-wrap'>
                                 <div className='col-md-6 p-2'>
                                     <TextField fullWidth label="E-mail Adresse*" variant="standard" />
                                 </div>
                                 <div className='col-md-6 p-2'>
-                                    <TextField fullWidth label="Telefonummer*" variant="standard" />
+                                    <TextField fullWidth label={t('tel')} variant="standard" />
 
                                 </div>
                             </div>
                             <div className="form-floating">
                                 <textarea className="form-control my-3" placeholder="Leave a comment here" />
-                                <label for="floatingTextarea2">Bemerkungen</label>
+                                <label for="floatingTextarea2">{t('remark')}</label>
                             </div>
-                            <Checkbox {...Label} defaultChecked /><span>Rechungsadresse</span>
+                            <Checkbox {...Label} defaultChecked /><span>{t('bilADD')}</span>
 
                         </form>
 
                         <h2>Select Payment method</h2>
                         <div className='row py-5'>
-                            <div className='d-flex'>
+                            <div className='d-flex flex-wrap gap-2'>
                                 <div className='col-md-4'>
                                     <button className='btn btn-primary  btn-lg'><img src={wallet} width="40px" /> Cash</button>
                                 </div>
-                                <div className='col-md-4'>
+                                <div className='col-md-3'>
                                     <button className='btn btn-outline-primary btn-lg'><img src={stripe} width="83px" /></button>
                                 </div>
                                 <div className='col-md-4'>

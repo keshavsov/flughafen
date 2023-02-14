@@ -9,6 +9,7 @@ body {
   background: whitesmoke;
   font-size: 14px;
   overflow-x: hidden;
+  font-family: 'DM Sans'
 }
 
 /* Override */
@@ -28,7 +29,7 @@ body {
 .vertical-line {
   margin-top: 20px;
   border-left: 2px solid slategrey;
-  height: 180px;
+  height: 260px;
 }
 
 /*  */
@@ -44,8 +45,8 @@ body {
 }
 
 .span-text {
-  font-size: 17.7236px;
-  font-weight: 700;
+  font-size: 20.7236px;
+  font-weight: 500;
   text-align: center;
 
 }
@@ -54,7 +55,7 @@ body {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
-  font-size: 22.7236px;
+  font-size: 25.7236px;
   line-height: 33px;
 
   color: #000000;
@@ -79,7 +80,7 @@ body {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 23.4889px;
+  font-size: 25.4889px;
   line-height: 31px;
 
   color: #000000;
@@ -102,7 +103,7 @@ body {
 }
 
 .footer-blog-text {
-  /* font-family: 'DM Sans'; */
+  font-family: 'DM Sans';
   font-size: 18.3px;
   line-height: 23px;
 
@@ -123,6 +124,7 @@ h2 {
 /* Over Ride Stepper */
 .MuiStepLabel-root .MuiSvgIcon-root {
   font-size: 3rem;
+  font-family: 'DM Sans';
   color: var(--primary);
 }
 
@@ -134,7 +136,8 @@ h2 {
   text-align: center;
   color: #fff;
   padding: 3px;
-  font-size: 1.5rem
+  font-size: 1.5rem;
+  font-family: 'DM Sans'
 }
 
 .puls-minus-btn-skyblue {
@@ -145,6 +148,7 @@ h2 {
   text-align: center;
   padding: 3px;
   font-size: 1.5rem
+  
 }
 
 .Gesamt-text {
@@ -196,6 +200,10 @@ h2 {
   text-decoration: none;
   color: gray;
   padding-right: 2rem;
+  font-family: 'DM Sans';
+  /* font-weight: 700; */
+
+
 }
 
  /* summary component textfield */
