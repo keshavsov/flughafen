@@ -1,11 +1,16 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import boy from '../Assets/Images/Boy.png'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { TextField } from '@mui/material';
 import { Password } from '@mui/icons-material';
 export function Login() {
   const { t } = useTranslation();
+  const nav=useNavigate()
+
+  const handleLogin=()=>{
+    nav('/home')
+  }
   return (<>
     <div className='container-fluid' style={{ background: "#C7E7F1",paddingBottom:"5%" }}>
       <div className='row px-3'>
@@ -29,7 +34,7 @@ export function Login() {
                 <p>passwort vergessen?</p>
               </div>
             </div>
-            <button type="submit" class="btn btn-primary w-100">Submit</button>
+            <button type="submit" class="btn btn-primary w-100" onClick={handleLogin}>Submit</button>
             <p></p>
             <center>
               <p> {t('Notamemberyet?')} <Link to="">Jetzt registrieren.</Link></p>

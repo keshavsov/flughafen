@@ -7,21 +7,24 @@ import {VehicleOption} from './pages/VehicleOption'
 import {Done} from './pages/Done';
 import {ContactInfo} from './pages/ContactInfo'
 import {Summary } from './pages/Summary'
+import { useState } from "react";
+
 function App() {
+  const [nextStapper,setNextStapper]=useState(1)
   const routes = useRoutes([
     {path: '/', element: <Login/>},
     {path: '/home', element: <Home/>},
-    {path: '/footer', element: <Footer/>},
-    {path: '/vehicle', element: <VehicleOption/>},
+    {path: '/vehicle', element: <VehicleOption nextStapper={nextStapper} setNextStapper={setNextStapper} />},
+    {path:'/contact' ,element:<ContactInfo nextStapper={nextStapper} setNextStapper={setNextStapper} />},
+    {path:'/summary',element:<Summary nextStapper={nextStapper} setNextStapper={setNextStapper} />},
     {path:'/done' ,element:<Done/>},
-    {path:'/contact' ,element:<ContactInfo/>},
-    {path:'/summary',element:<Summary/>}
+    {path: '/footer', element: <Footer/>},
 
 
   ]);
 
   return (
-  <LayoutI>
+  <LayoutI >
   {routes}
   </LayoutI>)
 }

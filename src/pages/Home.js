@@ -16,18 +16,23 @@ import { BasicTimePicker } from '../component/Elements/Timer'
 import { ResponsiveDatePickers } from '../component/Elements/Date'
 import { Box, FormControl, InputLabel, MenuItem, Select, TextField } from '@mui/material';
 import { useTranslation } from "react-i18next";
+import { useNavigate } from 'react-router-dom'
 const { Location } = SvgImages;
 
 export default function Home() {
   const [journey, setJourney] = React.useState('');
   const [extraTime, setExtraTime] = React.useState('');
   const { t } = useTranslation();
+  const nav=useNavigate()
   const handleJourney = (event) => {
     setJourney(event.target.value);
   };
   const handleExtraTime = (event) => {
     setExtraTime(event.target.value);
   };
+  const handleHomepage=()=>{
+    nav('/vehicle')
+  }
   return (<>
     <div className='container-fluid bg-white'>
       <div className='row m-3'>
@@ -96,7 +101,7 @@ export default function Home() {
             </details>
             <p></p>
 
-            <button className='btn btn-primary w-100'>Book Now</button>
+            <button className='btn btn-primary w-100' onClick={handleHomepage}>Book Now</button>
 
 
           </form>

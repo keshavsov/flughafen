@@ -1,7 +1,14 @@
 import React from 'react'
-import { useTranslation} from 'react-i18next'
+import { useTranslation } from 'react-i18next'
+import { useNavigate } from 'react-router-dom';
+
 export function PaymentList() {
-  const {t} =useTranslation();
+  const { t } = useTranslation();
+  const nav = useNavigate()
+
+  const handleProcess = () => {
+    nav('/contact')
+  }
   return (
     <>
 
@@ -20,7 +27,7 @@ export function PaymentList() {
         <div className='Gesamt-text'><b>$223.00</b></div>
       </div>
       <div className='mt-4'>
-        <button className="btn btn-primary w-100"  >Continue</button>
+        <button className="btn btn-primary w-100" onClick={handleProcess}>Continue</button>
       </div>
     </>
   )

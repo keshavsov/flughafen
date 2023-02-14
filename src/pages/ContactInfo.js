@@ -9,7 +9,8 @@ import stripe from '../Assets/Images/Group (1).png'
 import { Label } from '@mui/icons-material'
 import { PaymentList } from '../component/PaymentList'
 const { EditIcon } = svgImages;
-export function ContactInfo() {
+
+export function ContactInfo({nextStapper,setNextStapper}) {
     const { t } = useTranslation();
     return (
         <>
@@ -22,7 +23,7 @@ export function ContactInfo() {
                         </div>
                     </div>
                     <div className="col-sm-9">
-                        <Stapper />
+                        <Stapper nextStapper={nextStapper} setNextStapper={setNextStapper(nextStapper+1)}/>
                     </div>
                 </div>
                 <div className='row'>

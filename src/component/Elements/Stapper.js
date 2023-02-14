@@ -6,7 +6,7 @@ import StepLabel from '@mui/material/StepLabel';
 import styled from '@mui/styled-engine-sc';
 
 const steps = [
- 'Booking Details',
+//  'Booking Details',
   'Vehicle option',
   'Kontakt-Information',
   'Summary',
@@ -21,11 +21,13 @@ const StepperWrapper = styled('div')(()=>({
   }
 }));
 
-export default function Stapper() {
+export default function Stapper({nextStapper}) {
   return ( 
+    
     <Box sx={{ width: '100%', my: 4 }}>
       <StepperWrapper>
-      <Stepper activeStep={1} alternativeLabel>
+      <Stepper activeStep={nextStapper} alternativeLabel>
+  
         {steps.map((label) => (
           <Step key={label} sx={{zIndex: 1}}>
             <StepLabel ><b>{label}</b></StepLabel>
