@@ -21,7 +21,7 @@ export function Summary() {
                         </div>
                     </div>
                     <div className="col-sm-9">
-                        <Stapper />
+                        <Stapper activeStep={3} />
                     </div>
                 </div>
                 <div className='row'>
@@ -120,7 +120,7 @@ export function Summary() {
                         <div className='p-5 text-center white-card mt-4'>
                             <h5>{t('diskcount')}</h5>
                         </div>
-                        <PaymentList />
+                        <PaymentList path="/done" buttonName="Book Now"/>
                     </div>
 
                 </div>

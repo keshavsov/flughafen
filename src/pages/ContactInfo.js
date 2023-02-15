@@ -10,7 +10,7 @@ import { Label } from '@mui/icons-material'
 import { PaymentList } from '../component/PaymentList'
 const { EditIcon } = svgImages;
 
-export function ContactInfo({nextStapper,setNextStapper}) {
+export function ContactInfo({ }) {
     const { t } = useTranslation();
     return (
         <>
@@ -23,7 +23,7 @@ export function ContactInfo({nextStapper,setNextStapper}) {
                         </div>
                     </div>
                     <div className="col-sm-9">
-                        <Stapper nextStapper={nextStapper} setNextStapper={setNextStapper(nextStapper+1)}/>
+                        <Stapper  activeStep={2} />
                     </div>
                 </div>
                 <div className='row'>
@@ -31,7 +31,7 @@ export function ContactInfo({nextStapper,setNextStapper}) {
                         <span className='vehicle-option-sider-text'>{t('Zfassung')}</span>
                         <span className='mx-5'>
                             {/* <EditIcon /> */}
-                            <div style={{textAlign:"end"}}><button className='btn rounded-pill bg-white px-4 '> <b>Edit</b> </button></div>
+                            <div style={{ textAlign: "end" }}><button className='btn rounded-pill bg-white px-4 '> <b>Edit</b> </button></div>
 
                         </span>
                         <Stack spacing={2} >
@@ -90,7 +90,7 @@ export function ContactInfo({nextStapper,setNextStapper}) {
                         </div>
                     </div>
                     <div className='col-md-3 mb-5'>
-                        <PaymentList />
+                        <PaymentList path="/summary" buttonName="Continue"/>
 
 
                     </div>

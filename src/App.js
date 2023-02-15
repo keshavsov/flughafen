@@ -10,13 +10,12 @@ import {Summary } from './pages/Summary'
 import { useState } from "react";
 
 function App() {
-  const [nextStapper,setNextStapper]=useState(1)
   const routes = useRoutes([
     {path: '/', element: <Login/>},
     {path: '/home', element: <Home/>},
-    {path: '/vehicle', element: <VehicleOption nextStapper={nextStapper} setNextStapper={setNextStapper} />},
-    {path:'/contact' ,element:<ContactInfo nextStapper={nextStapper} setNextStapper={setNextStapper} />},
-    {path:'/summary',element:<Summary nextStapper={nextStapper} setNextStapper={setNextStapper} />},
+    {path: '/vehicle', element: <VehicleOption/>},
+    {path:'/contact' ,element:<ContactInfo/>},
+    {path:'/summary',element:<Summary/>},
     {path:'/done' ,element:<Done/>},
     {path: '/footer', element: <Footer/>},
 

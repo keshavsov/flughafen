@@ -1,5 +1,6 @@
 :root {
   --primary: #0E4672;
+  --white: #FFFF;
   --shadow: 0px 4px 4px -2px rgba(14, 70, 114, 0.3);
 }
 
@@ -9,7 +10,8 @@ body {
   background: whitesmoke;
   font-size: 14px;
   overflow-x: hidden;
-  font-family: 'DM Sans'
+  /* font-family: 'DM Sans'; */
+  /* font-style: normal; */
 }
 
 /* Override */
@@ -106,7 +108,6 @@ body {
   font-family: 'DM Sans';
   font-size: 18.3px;
   line-height: 23px;
-
   color: #FFFFFF;
 }
 
@@ -125,6 +126,10 @@ h2 {
 .MuiStepLabel-root .MuiSvgIcon-root {
   font-size: 3rem;
   font-family: 'DM Sans';
+  color: var(--primary);
+}
+
+.MuiStepLabel-root .MuiSvgIcon-root .MuiStepIcon-text {
   color: var(--primary);
 }
 

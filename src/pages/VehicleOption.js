@@ -17,7 +17,7 @@ import svgImages from '../Assets/Images/svgImages'
 import { useTranslation } from 'react-i18next'
 import { PaymentList } from '../component/PaymentList'
 
-export function VehicleOption({nextStapper}) {
+export function VehicleOption({}) {
     const { t } = useTranslation();
     const { EditIcon } = svgImages;
     return (
@@ -31,7 +31,7 @@ export function VehicleOption({nextStapper}) {
                         </div>
                     </div>
                     <div className="col-sm-9">
-                        <Stapper  nextStapper={nextStapper}/>
+                        <Stapper activeStep={1}/>
                     </div>
                 </div>
                 <div className='row '>
@@ -114,7 +114,7 @@ export function VehicleOption({nextStapper}) {
 
                     <div className='col-md-3 mb-5 '>
 
-                        <PaymentList />
+                        <PaymentList path='/contact' buttonName="Continue" />
                     </div>
 
 

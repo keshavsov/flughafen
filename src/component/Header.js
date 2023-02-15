@@ -60,36 +60,34 @@ export default function Header() {
             <Nav className="ml-auto" navbar>
               <NavItem>
               <NavLink className='span-text'>
-                <Link to="/home" className='span-text link '>Calculate & Price Book</Link>
+                <Link to="#" className='span-text link '>Calculate & Price Book</Link>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink className='span-text'>
-                <Link to="/vehicle" className='link' >
+                <Link to="#" className='link' >
                       About Us
                 </Link>
                 </NavLink>
               </NavItem>
               <NavItem>
               <NavLink className='span-text'>
-                <Link to="/contact" className='span-text link'>Business account</Link>
+                <Link to="#" className='span-text link'>Business account</Link>
                 </NavLink>
               </NavItem>
               <NavItem>
               <NavLink className='span-text'>
-                <Link to="/vehicle" className='span-text link'>Imprint</Link>
+                <Link to="#" className='span-text link'>Imprint</Link>
                 </NavLink>
               </NavItem>
               <NavItem>
               <NavLink className='span-text'>
-                <Link to="/summary" className='span-text link'>Summary</Link>
+                <Link to="#" className='span-text link'>News & Updates</Link>
                 </NavLink>
               </NavItem>
-              <NavItem>
-                {/* <NavLink href="https://github.com/reactstrap/reactstrap" className='span-text'>News & Updates</NavLink> */}
-              </NavItem>
-
             </Nav>
+              
+
 
           </Collapse>
           <div className='d-flex gap-3 '>
