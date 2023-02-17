@@ -24,6 +24,7 @@ export default function Home() {
   const [extraTime, setExtraTime] = React.useState('');
   const { t } = useTranslation();
   const nav=useNavigate()
+  
   const handleJourney = (event) => {
     setJourney(event.target.value);
   };
@@ -54,10 +55,10 @@ export default function Home() {
             <div className='row my-5'>
               <div className='col-md-6 col-sm-12'>
 
-                <ResponsiveDatePickers />
+                <ResponsiveDatePickers label="Date"/>
               </div>
               <div className='col-md-6 col-sm-12' >
-                <BasicTimePicker />
+                <BasicTimePicker label="Time"/>
               </div>
             </div>
             <div className='row my-5'>

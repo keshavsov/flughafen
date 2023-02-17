@@ -6,14 +6,14 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { TimePicker } from '@mui/x-date-pickers/TimePicker';
 import { Box } from '@mui/system';
 
-export function BasicTimePicker() {
+export function BasicTimePicker({label}) {
   const [value, setValue] = React.useState(null);
 
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
       <Box fullWidth>
         <TimePicker
-          label="Time"
+          label={label}
           value={value}
           fullWidth
           onChange={(newValue) => {

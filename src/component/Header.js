@@ -90,14 +90,11 @@ export default function Header() {
 
 
           </Collapse>
-          <div className='d-flex gap-3 '>
+          <div className='d-flex gap-3 flex-wrap '>
             <div>
               <Link to="/" class="btn btn-outline link"> Login</Link>
-              {/* <Link to="/">Login</Link> */}
             </div>
-            {/* <div>
-              <Link to="/home">Home</Link>
-            </div> */}
+            
             <div>
               <Button size='large' variant="contained">Registration</Button>
             </div>

@@ -10,9 +10,9 @@ body {
   background: whitesmoke;
   font-size: 14px;
   overflow-x: hidden;
-  /* font-family: 'DM Sans'; */
-  /* font-style: normal; */
+  font-family: 'DM Sans', sans-serif;
 }
+
 
 /* Override */
 
@@ -23,7 +23,7 @@ body {
 
 .white-card {
   background: #FFFFFF;
-  border-bottom: 1px solid #E0E0E0;
+  border-bottom: 2px solid #E0E0E0;
   box-shadow: var(--shadow);
   /* padding-bottom: 4rem; */
 }
@@ -40,7 +40,6 @@ body {
 }
 
 .span {
-  /* color:#0E4672; */
   color: #0b74c5;
   font-size: 22.7236px;
   font-weight: 700;
@@ -54,7 +53,7 @@ body {
 }
 
 .p {
-  font-family: 'DM Sans';
+  /* font-family: 'DM Sans'; */
   font-style: normal;
   font-weight: 700;
   font-size: 25.7236px;
@@ -79,7 +78,7 @@ body {
 .text-position {
   bottom: 20px;
   left: 50px;
-  font-family: 'DM Sans';
+  /* font-family: 'DM Sans'; */
   font-style: normal;
   font-weight: 500;
   font-size: 25.4889px;
@@ -89,13 +88,13 @@ body {
 }
 
 .footer-text {
-  font-family: 'DM Sans';
+  /* font-family: 'DM Sans'; */
   font-size: 22px;
   font-weight: 700
 }
 
 .footer-text-header {
-  font-family: 'DM Sans';
+  /* font-family: 'DM Sans'; */
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -105,14 +104,14 @@ body {
 }
 
 .footer-blog-text {
-  font-family: 'DM Sans';
+  /* font-family: 'DM Sans'; */
   font-size: 18.3px;
   line-height: 23px;
   color: #FFFFFF;
 }
 
 h2 {
-  font-family: 'DM Sans';
+  /* font-family: 'DM Sans'; */
   font-style: normal;
   font-weight: 700;
   font-size: 35.2333px;
@@ -142,7 +141,7 @@ h2 {
   color: #fff;
   padding: 3px;
   font-size: 1.5rem;
-  font-family: 'DM Sans'
+  /* font-family: 'DM Sans' */
 }
 
 .puls-minus-btn-skyblue {
@@ -153,12 +152,11 @@ h2 {
   text-align: center;
   padding: 3px;
   font-size: 1.5rem
-  
 }
 
 .Gesamt-text {
   color: #0E4672;
-  font-family: 'DM Sans';
+  /* font-family: 'DM Sans'; */
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -166,7 +164,7 @@ h2 {
 }
 
 .card-text {
-  font-family: 'DM Sans';
+  /* font-family: 'DM Sans'; */
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -178,7 +176,7 @@ h2 {
 
 /*  */
 .vehicle-option-sider-text {
-  font-family: 'DM Sans';
+  /* font-family: 'DM Sans'; */
   font-style: normal;
   font-weight: 700;
   font-size: 25.0571px;
@@ -189,7 +187,7 @@ h2 {
 }
 
 .thanku {
-  font-family: 'DM Sans';
+  /* font-family: 'DM Sans'; */
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -201,26 +199,73 @@ h2 {
   outline: none;
 }
 
-.link{
+.link {
   text-decoration: none;
   color: gray;
   padding-right: 2rem;
-  font-family: 'DM Sans';
+  /* font-family: 'DM Sans'; */
   /* font-weight: 700; */
 
 
 }
 
- /* summary component textfield */
-.custom-textfield input{
+/* summary component textfield */
+.custom-textfield input {
   color: #fff;
 }
-.custom-textfield .Mui-focused{
+
+.custom-textfield .Mui-focused {
   color: #455E72 !important;
 }
-.custom-textfield .MuiInputBase-root:after{
+
+.custom-textfield .MuiInputBase-root:after {
   border-bottom: #000
 }
-.custom-textfield label{
+
+.custom-textfield label {
   color: #455E72;
 }
+/* ------------------Admin booking page------------------ */
+.admin-booking {
+  /* font-family: DM Sans; */
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1F3648;
+}
+
+.heading-section {
+  /* font-family:DM Sans; */
+  /* width: 1741px; */
+  height: 55px;
+  background: #1F3648;
+  color: #fff;
+  padding: 16px;
+  font-size:large;
+}
+.label-admin-text{
+  /* font-family: 'DM Sans'; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 18px;
+  color: #455E72;
+  margin-bottom: 10px;
+}
+.text-admin{
+  /* font-family: DM Sans; */
+font-size: 20px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: left;
+color:#1F3648;
+}  
+.table-th{
+  background-color:#F1F9FF;
+}
+
+  
+

@@ -8,7 +8,7 @@ import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { MobileDatePicker } from '@mui/x-date-pickers/MobileDatePicker';
 import { DesktopDatePicker } from '@mui/x-date-pickers/DesktopDatePicker';
 
-export  function ResponsiveDatePickers() {
+export  function ResponsiveDatePickers({label}) {
   const [value, setValue] = React.useState(dayjs('2022-04-07'));
 
   return (
@@ -17,7 +17,7 @@ export  function ResponsiveDatePickers() {
     
         <DatePicker
           disableFuture
-          label="Date"
+          label={label}
           openTo="year"
           views={['year', 'month', 'day']}
           value={value}
