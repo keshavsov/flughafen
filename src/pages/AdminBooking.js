@@ -136,8 +136,66 @@ export function AdminBooking() {
                         </table>
                     </div>
                 </div>
-                <div className='col-md-12 heading-section'>Booking Extra</div>
+                <div className='col-md-12 heading-section my-'>Booking Extra</div>
 
+                <div className='row gap-5 my-4 p-2 m-2 '>
+                    <div className='col-md-5 border white-card p-3'>
+                        <div className='label-text '>Child Seat</div>
+                        <hr />
+                        <div className='row mx-2 '>
+                            <div className='col-md-9 text-admin'>Baby Seat (0 Months - 9 Months)</div>
+                            <div className='col-md-3 '><span>22</span><button>WWWW</button></div>
+                        </div>
+                        <hr />
+                        <div className='row mx-2 '>
+                            <div className='col-md-9 text-admin'>Child Seat (9 Month - 4 Years)</div>
+                            <div className='col-md-3'><span>22</span><button>WWWW</button></div>
+                        </div>
+                        <hr />
+                        <div className='row mx-2 '>
+                            <div className='col-md-9 text-admin'>Booster Seat (4 Month - 12 Years)</div>
+                            <div className='col-md-3'><span>22</span><button>WWWW</button></div>
+                        </div>
+                        <hr />
+                    </div>
+                    <div className='col-md-5 border white-card  p-3'>
+
+                        <div className='label-text '>Package</div>
+                        <hr />
+                        <div className='row mx-2 '>
+                            <div className='col-md-9 text-admin'>Silber </div>
+                            <div className='col-md-3'><span>22</span><button>WWWW</button></div>
+                        </div>
+                        <hr />
+                        <div className='row mx-2 '>
+                            <div className='col-md-9 text-admin'>Gold </div>
+                            <div className='col-md-3'><span>22</span><button>WWWW</button></div>
+                        </div>
+                        <hr />
+                        <div className='row mx-2 '>
+                            <div className='col-md-9 text-admin'>Platin </div>
+                            <div className='col-md-3'><span>22</span><button>WWWW</button></div>
+                        </div>
+                        <hr />
+                    </div>
+                    <div className='col-md-5 border white-card'>
+                        <div className='label-text '>Package</div>
+                        <hr />
+                        <div className='row mx-2 mb-4 '>
+                            <div className='col-md-9 text-admin'>Rollstuhl </div>
+                            <div className='col-md-3'><span>22</span><button>WWWW</button></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div className='col-md-12 heading-section my-'>Comments</div>
+                <div className='col-md-12 my-4 m-2'>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea">Comments</label>
+                    </div>
+                </div>
+                <button className='btn btn-primary w-auto mx-3 px-5 mb-5'>Submit</button>
             </div>
         </div>
     </>)
