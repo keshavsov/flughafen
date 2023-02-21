@@ -19,6 +19,7 @@ export function AdminBooking() {
         setExtraTime(event.target.value);
     };
     return (<>
+    
         <div className='container-fluid'>
             <div className='row  bg-white p-2 '>
                 <div className='admin-booking my-4 '>Admin Booking</div>
@@ -143,12 +144,13 @@ export function AdminBooking() {
 
                 <div className='row gap-5 my-4 p-2 m-2 '>
                     <div className='col-md-5 border white-card p-3'>
-                        <div className='label-text '> <img src={emoji} width= "50px" style={{marginRight:"10px"}}  />Child Seat</div>
+                        <div className='label-text '> <img src={emoji} width="50px" style={{ marginRight: "10px" }} />Child Seat</div>
                         <hr />
                         <div className='row mx-2 '>
-                            <div className='col-md-9 text-admin'>Baby Seat (0 Months - 9 Months)</div>
+                            <div className='col-md-8 text-admin'>Baby Seat (0 Months - 9 Months)</div>
+                            <div className='col-md-1 pb-2 label-text mt-auto'>5</div>
                             <div className='col-md-3 '>
-                                <div className='rounded-pill bg-secondary d-flex mx-4 ' >
+                                <div className='rounded-pill  d-flex mx-4 ' >
                                     <span className='w-50 puls-minus-btn-darkblue' onClick={""}>+</span>
                                     <span className='w-50 puls-minus-btn-skyblue' onClick={""}>-</span>
                                 </div>
@@ -156,7 +158,8 @@ export function AdminBooking() {
                         </div>
                         <hr />
                         <div className='row mx-2 '>
-                            <div className='col-md-9 text-admin'>Child Seat (9 Month - 4 Years)</div>
+                            <div className='col-md-8 text-admin'>Child Seat (9 Month - 4 Years)</div>
+                            <div className='col-md-1 pb-2 label-text mt-auto'>5</div>
                             <div className='col-md-3'>
                                 <div className='rounded-pill bg-secondary d-flex mx-4 ' >
                                     <span className='w-50 puls-minus-btn-darkblue' onClick={""}>+</span>
@@ -166,11 +169,14 @@ export function AdminBooking() {
                         </div>
                         <hr />
                         <div className='row mx-2 '>
-                            <div className='col-md-9 text-admin'>Booster Seat (4 Month - 12 Years)</div>
+                            <div className='col-md-8 text-admin'>Booster Seat (4 Month - 12 Years)</div>
+                            <div className='col-md-1 pb-2 label-text mt-auto'>5</div>
                             <div className='col-md-3'>
-                                <div className='rounded-pill bg-secondary d-flex mx-4 ' >
-                                    <span className='w-50 puls-minus-btn-darkblue' onClick={""}>+</span>
-                                    <span className='w-50 puls-minus-btn-skyblue' onClick={""}>-</span>
+                                <div>
+                                    <div className='rounded-pill bg-secondary d-flex mx-4 ' >
+                                        <span className='w-50 puls-minus-btn-darkblue' onClick={""}>+</span>
+                                        <span className='w-50 puls-minus-btn-skyblue' onClick={""}>-</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -178,10 +184,11 @@ export function AdminBooking() {
                     </div>
                     <div className='col-md-5 border white-card  p-3'>
 
-                        <div className='label-text '> <img src={pakage} width= "40px" style={{marginRight:"10px"}} />Package</div>
+                        <div className='label-text '> <img src={pakage} width="40px" style={{ marginRight: "10px" }} />Package</div>
                         <hr />
                         <div className='row mx-2 '>
-                            <div className='col-md-9 text-admin'>Silber </div>
+                            <div className='col-md-8 text-admin'>Silber </div>
+                            <div className='col-md-1 pb-2 label-text mt-auto'>5</div>
                             <div className='col-md-3'>
                                 <div className='rounded-pill bg-secondary d-flex mx-4 ' >
                                     <span className='w-50 puls-minus-btn-darkblue' onClick={""}>+</span>
@@ -191,7 +198,8 @@ export function AdminBooking() {
                         </div>
                         <hr />
                         <div className='row mx-2 '>
-                            <div className='col-md-9 text-admin'>Gold </div>
+                            <div className='col-md-8 text-admin'>Gold </div>
+                            <div className='col-md-1 pb-2 label-text mt-auto'>5</div>
                             <div className='col-md-3'>
                                 <div className='rounded-pill bg-secondary d-flex mx-4 ' >
                                     <span className='w-50 puls-minus-btn-darkblue' onClick={""}>+</span>
@@ -201,7 +209,8 @@ export function AdminBooking() {
                         </div>
                         <hr />
                         <div className='row mx-2 '>
-                            <div className='col-md-9 text-admin'>Platin </div>
+                            <div className='col-md-8 text-admin'>Platin </div>
+                            <div className='col-md-1 pb-2 label-text mt-auto'>5</div>
                             <div className='col-md-3'>
                                 <div className='rounded-pill bg-secondary d-flex mx-4 ' >
                                     <span className='w-50 puls-minus-btn-darkblue' onClick={""}>+</span>
@@ -212,10 +221,11 @@ export function AdminBooking() {
                         <hr />
                     </div>
                     <div className='col-md-5 border white-card'>
-                        <div className='label-text '> <img src={disability1} width= "40px" style={{marginRight:"10px"}} />Wheelchair (Foldable)</div>
+                        <div className='label-text '> <img src={disability1} width="40px" style={{ marginRight: "10px" }} />Wheelchair (Foldable)</div>
                         <hr />
                         <div className='row mx-2 mb-4 '>
-                            <div className='col-md-9 text-admin'>Rollstuhl </div>
+                            <div className='col-md-8 text-admin'>Rollstuhl </div>
+                            <div className='col-md-1 pb-2 label-text mt-auto'>5</div>
                             <div className='col-md-3'>
                                 <div className='rounded-pill bg-secondary d-flex mx-4 ' >
                                     <span className='w-50 puls-minus-btn-darkblue' onClick={""}>+</span>

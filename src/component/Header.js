@@ -72,7 +72,7 @@ export default function Header() {
               </NavItem>
               <NavItem>
               <NavLink className='span-text'>
-                <Link to="#" className='span-text link'>Business account</Link>
+                {/* <Link to="#" className='span-text link'>Business account</Link> */}
                 </NavLink>
               </NavItem>
               <NavItem>
@@ -82,7 +82,9 @@ export default function Header() {
               </NavItem>
               <NavItem>
               <NavLink className='span-text'>
-                <Link to="#" className='span-text link'>News & Updates</Link>
+                {/* <Link to="#" className='span-text link'>News & Updates</Link> */}
+                <Link to="/adminbooking" className='span-text link'>AdminBooking</Link>
+                <Link to="/drive-vehicle" className='span-text link'>Driver&vehicle</Link>
                 </NavLink>
               </NavItem>
             </Nav>

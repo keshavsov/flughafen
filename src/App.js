@@ -7,6 +7,7 @@ import { VehicleOption } from './pages/VehicleOption'
 import { Done } from './pages/Done';
 import { ContactInfo } from './pages/ContactInfo'
 import { Summary } from './pages/Summary'
+import {DriveAndVehicle} from './pages/DriveAndVehicle'
 import { AdminBooking } from './pages/AdminBooking'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
     { path: '/summary', element: <Summary /> },
     { path: '/done', element: <Done /> },
     { path: '/adminbooking', element: <AdminBooking /> },
+    { path: '/drive-vehicle', element: <DriveAndVehicle/> },
 
     { path: '/footer', element: <Footer /> },
 

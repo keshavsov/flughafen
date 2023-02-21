@@ -124,7 +124,7 @@ export function TableVehicle() {
 
 const PlusMinusBtn = ({ onClickPlus, onClickMinus }) => {
   return (
-    <div className='rounded-pill bg-secondary d-flex' >
+    <div className='rounded-pill bg-secondary d-flex ' style={{margin:""}} >
       <span className='w-50 puls-minus-btn-darkblue' onClick={onClickPlus}>+</span>
       <span className='w-50 puls-minus-btn-skyblue' onClick={onClickMinus}>-</span>
     </div>
