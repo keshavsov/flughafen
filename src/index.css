@@ -236,7 +236,7 @@ h2 {
   color: #1F3648;
 }
 .label-text{
-  font-family: DM Sans;
+  /* font-family: DM Sans; */
 font-size: 20px;
 font-weight: 700;
 line-height: 23px;
@@ -275,6 +275,44 @@ color:#1F3648;
 }  
 .table-th{
   background-color:#F1F9FF;
+}
+
+/* driver-register */
+.driver-heading{
+  font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 55px;
+color: #0E4672;
+}
+.text-driver{
+  /* font-family: DM Sans; */
+font-size: 20px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: left;
+color:#000000
+}
+
+.drive-step{
+  /* font-family: DM Sans; */
+font-size: 30px;
+font-weight: 500;
+line-height: 39px;
+letter-spacing: 0em;
+text-align: left;
+color:#0E4672
+}
+.drive-step-content{
+  /* font-family: DM Sans; */
+font-size: 30px;
+font-weight: 500;
+line-height: 39px;
+letter-spacing: 0em;
+text-align: left;
+color:#0E4672
 }
 
   

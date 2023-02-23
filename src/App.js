@@ -9,6 +9,8 @@ import { ContactInfo } from './pages/ContactInfo'
 import { Summary } from './pages/Summary'
 import {DriveAndVehicle} from './pages/DriveAndVehicle'
 import { AdminBooking } from './pages/AdminBooking'
+import {EditProfile} from "./pages/EditProfile"
+import {DriverRegistration} from "./pages/DriverRegistration"
 
 function App() {
   const routes = useRoutes([
@@ -20,6 +22,8 @@ function App() {
     { path: '/done', element: <Done /> },
     { path: '/adminbooking', element: <AdminBooking /> },
     { path: '/drive-vehicle', element: <DriveAndVehicle/> },
+    { path: '/edit-profile', element: <EditProfile/> },
+    { path: '/driver-reg', element: <DriverRegistration/> },
 
     { path: '/footer', element: <Footer /> },
 
