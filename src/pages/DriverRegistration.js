@@ -128,13 +128,13 @@ export function DriverRegistration() {
                         </div>
                         <div className='row'>
                             <div className='col-md-6 '>
-                                <FormControl sx={{ m: 1, width: '25ch' }} variant="standard">
+                                <FormControl sx={{ width: '85ch', }} variant="standard" error  helperText="please valid password" >
                                     <InputLabel htmlFor="standard-adornment-password">Password</InputLabel>
                                     <Input
                                         id="standard-adornment-password"
                                         type={showPassword ? 'text' : 'password'}
                                         endAdornment={
-                                            <InputAdornment position="end">
+                                            <InputAdornment >
                                                 <IconButton
                                                     aria-label="toggle password visibility"
                                                     onClick={handleClickShowPassword}

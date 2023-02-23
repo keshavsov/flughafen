@@ -2,28 +2,54 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import boy from '../Assets/Images/Boy.png'
 import { Link, useNavigate } from 'react-router-dom';
-import { TextField } from '@mui/material';
-import { Password } from '@mui/icons-material';
-export function Login() {
-  const { t } = useTranslation();
-  const nav=useNavigate()
+import { FormControl, Input, InputAdornment, InputLabel, TextField } from '@mui/material';
+import IconButton from '@mui/material/IconButton'
+import { Visibility, VisibilityOff } from '@mui/icons-material';
 
-  const handleLogin=()=>{
+export function Login() {
+  const [showPassword, setShowPassword] = React.useState(false);
+  const handleClickShowPassword = () => setShowPassword((show) => !show);
+  const handleMouseDownPassword = (event) => {
+    event.preventDefault();
+  };
+
+  const { t } = useTranslation();
+  const nav = useNavigate()
+
+  const handleLogin = () => {
     nav('/home')
   }
   return (<>
-    <div className='container-fluid' style={{ background: "#C7E7F1",paddingBottom:"5%" }}>
+    <div className='container-fluid' style={{ background: "#C7E7F1", paddingBottom: "5%" }}>
       <div className='row px-3'>
         <div className="col col-md-7 white-card rounded p-5 my-4 h-50">
           <form>
             <h2>{t('CustomerLogin')}</h2>
             <p className='p'>Join us! and enjoy your ride in just simple steps.</p>
             <div class="mb-3">
-              <TextField label="Email address" variant='standard' fullWidth autoComplete='off'/>
+              <TextField label="Email address" variant='standard' fullWidth autoComplete='off' />
               <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
             <div class="mb-3">
-              <TextField type="password" label="Password" variant='standard' fullWidth autoComplete='off'/>
+              <FormControl sx={{ width: '96ch' }} variant="standard">
+                <InputLabel htmlFor="standard-adornment-password">Password</InputLabel>
+                <Input
+                  id="standard-adornment-password"
+                  type={showPassword ? 'text' : 'password'}
+                  endAdornment={
+                    <InputAdornment >
+                      <IconButton
+                        aria-label="toggle password visibility"
+                        onClick={handleClickShowPassword}
+                        onMouseDown={handleMouseDownPassword}
+
+                      >
+                        {showPassword ? <VisibilityOff /> : <Visibility />}
+                      </IconButton>
+                    </InputAdornment>
+                  }
+                />
+              </FormControl>
             </div>
             <div class="mb-3 form-check d-flex justify-content-between">
               <div>
@@ -41,7 +67,7 @@ export function Login() {
             </center>
           </form>
         </div>
-        <div className="col col-md-5 my-4 align-center" style={{placeContent:"center",display:"grid"}}>
+        <div className="col col-md-5 my-4 align-center" style={{ placeContent: "center", display: "grid" }}>
           <img src={boy} height="430rem" width="380rem" />
         </div>
 
