@@ -11,6 +11,8 @@ import {DriveAndVehicle} from './pages/DriveAndVehicle'
 import { AdminBooking } from './pages/AdminBooking'
 import {EditProfile} from "./pages/EditProfile"
 import {DriverRegistration} from "./pages/DriverRegistration"
+import {BookingIdPage} from "./pages/BookingIdPage";
+import {TermAndCondition} from "./pages/TermAndCondition"
 
 function App() {
   const routes = useRoutes([
@@ -24,6 +26,8 @@ function App() {
     { path: '/drive-vehicle', element: <DriveAndVehicle/> },
     { path: '/edit-profile', element: <EditProfile/> },
     { path: '/driver-reg', element: <DriverRegistration/> },
+    { path: '/BookingId', element: <BookingIdPage/> },
+    { path: '/termCondition', element: <TermAndCondition/> },
 
     { path: '/footer', element: <Footer /> },
 

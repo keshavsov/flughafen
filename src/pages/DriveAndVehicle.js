@@ -39,7 +39,7 @@ export function DriveAndVehicle() {
                                     <td className='text-admin'>T6788</td>
                                     <td className='text-admin'>Business</td>
                                     <td className='text-admin'>GewerbeanmeldungTaxi-Mietwagenkonzession</td>
-                                    <td className='text-admin'style={{ backgroundColor: "#FFF6EA" }}> <input type="radio"></input>Unapproved</td>
+                                    <td className='text-admin p-3'style={{ backgroundColor: "#FFF6EA" }}> <input type="radio"></input>Unapproved</td>
                                 </tr>
 
                             </tbody>
