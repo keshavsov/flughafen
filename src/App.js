@@ -13,9 +13,11 @@ import {EditProfile} from "./pages/EditProfile"
 import {DriverRegistration} from "./pages/DriverRegistration"
 import {BookingIdPage} from "./pages/BookingIdPage";
 import {TermAndCondition} from "./pages/TermAndCondition"
+import {Error} from "./pages/Error"
 
 function App() {
   const routes = useRoutes([
+    { path: '*', element: <Error /> },
     { path: '/', element: <Login /> },
     { path: '/home', element: <Home /> },
     { path: '/vehicle', element: <VehicleOption /> },

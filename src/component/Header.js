@@ -92,17 +92,17 @@ export default function Header() {
 
 
           </Collapse>
-          <div className='d-flex gap-3 flex-wrap '>
+          <div className='d-flex gap-3 flex-wrap white-space-nowrap' >
             <div>
-              <Link to="/" class="btn btn-outline link"> Login</Link>
+              <Link to="/" class="btn btn-outline link" sx={{padding:"8px"}}> Login</Link>
             </div>
             
             <div>
-              <Button size='large' variant="contained">Registration</Button>
+              <Button size='small' variant="contained" sx={{padding:"8px"}}>Registration</Button>
             </div>
             {/* <DropdownElement /> */}
             <Box >
-              <FormControl fullWidth>
+              <FormControl>
                 <Select
                   size='small'
                   onChange={handleChange}

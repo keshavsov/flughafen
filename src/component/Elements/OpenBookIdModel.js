@@ -6,7 +6,7 @@ import { ResponsiveDatePickers } from './Date';
 import { BasicTimePicker } from './Timer';
 const { GernamySvg } = svgImage;
 
-export function OpenBookIdModel({open}) {
+export function OpenBookIdModel({}) {
     const [open, setOpen] = useState(false);
     const [journey, setJourney] = React.useState('');
     const [extraTime, setExtraTime] = React.useState('');

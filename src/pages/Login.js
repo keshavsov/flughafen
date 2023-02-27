@@ -31,7 +31,8 @@ export function Login() {
               <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
             <div class="mb-3">
-              <FormControl sx={{ width: '96ch' }} variant="standard">
+            <TextField type="password" label="password" variant='standard' fullWidth autoComplete='off' />
+              {/* <FormControl sx={{ width: '50ch' }} variant="standard">
                 <InputLabel htmlFor="standard-adornment-password">Password</InputLabel>
                 <Input
                   id="standard-adornment-password"
@@ -49,7 +50,7 @@ export function Login() {
                     </InputAdornment>
                   }
                 />
-              </FormControl>
+              </FormControl> */}
             </div>
             <div class="mb-3 form-check d-flex justify-content-between">
               <div>

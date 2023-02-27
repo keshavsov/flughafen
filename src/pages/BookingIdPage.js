@@ -1,7 +1,7 @@
 import React from 'react'
 import { OpenBookIdModel } from '../component/Elements/OpenBookIdModel'
 
-export function BookingIdPage({}) {
+export function BookingIdPage({open}) {
     return (<>
         <div className='container-fluid bg-white'>
             <div className='container bg-white'>
