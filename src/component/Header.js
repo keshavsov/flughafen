@@ -59,32 +59,32 @@ export default function Header() {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-              <NavLink className='span-text'>
-                <Link to="#" className='span-text link '>Calculate & Price Book</Link>
+              <NavLink className='link-text'>
+                <Link to="#" className='link-text link '>Calculate & Price Book</Link>
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink className='span-text'>
+                <NavLink className='link-text'>
                 <Link to="#" className='link' >
                       About Us
                 </Link>
                 </NavLink>
               </NavItem>
               <NavItem>
-              <NavLink className='span-text'>
-                {/* <Link to="#" className='span-text link'>Business account</Link> */}
+              <NavLink className='link-text'>
+                {/* <Link to="#" className='link-text link'>Business account</Link> */}
                 </NavLink>
               </NavItem>
               <NavItem>
-              <NavLink className='span-text'>
-                <Link to="#" className='span-text link'>Imprint</Link>
+              <NavLink className='link-text'>
+                <Link to="#" className='link-text link'>Imprint</Link>
                 </NavLink>
               </NavItem>
               <NavItem>
-              <NavLink className='span-text'>
-                {/* <Link to="#" className='span-text link'>News & Updates</Link> */}
-                <Link to="/adminbooking" className='span-text link'>AdminBooking</Link>
-                <Link to="/drive-vehicle" className='span-text link'>Driver&vehicle</Link>
+              <NavLink className='link-text'>
+                {/* <Link to="#" className='link-text link'>News & Updates</Link> */}
+                <Link to="/adminbooking" className='link-text link'>AdminBooking</Link>
+                <Link to="/drive-vehicle" className='link-text link'>Driver&vehicle</Link>
                 </NavLink>
               </NavItem>
             </Nav>

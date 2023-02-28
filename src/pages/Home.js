@@ -36,7 +36,7 @@ export default function Home() {
   }
   return (<>
     <div className='container-fluid bg-white'>
-      <div className='row m-3'>
+      <div className='row'>
         <div className='col col-md-7 col-sm-12 rounded my-3  p-3'>
           <form >
            

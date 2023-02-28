@@ -18,7 +18,7 @@ body {
 
 .btn-primary {
   background-color: var(--primary);
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .white-card {
@@ -41,15 +41,21 @@ body {
 
 .span {
   color: #0b74c5;
-  font-size: 22.7236px;
+  font-size: 18px;
   font-weight: 700;
 }
 
 .span-text {
-  font-size:15.7236px;
-  font-weight:500;
-  text-align:center;
-  white-space:nowrap;
+  font-size: 15.7236px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.link-text {
+  font-size: 15.7236px;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
   margin: 3px -12px 2px -6px;
 }
 
@@ -58,7 +64,7 @@ body {
   /* font-family: 'DM Sans'; */
   font-style: normal;
   font-weight: 700;
-  font-size: 25.7236px;
+  font-size: 18.7236px;
   line-height: 33px;
 
   color: #000000;
@@ -83,7 +89,7 @@ body {
   /* font-family: 'DM Sans'; */
   font-style: normal;
   font-weight: 500;
-  font-size: 25.4889px;
+  font-size: 24.4889px;
   line-height: 31px;
 
   color: #000000;
@@ -116,13 +122,15 @@ h2 {
   /* font-family: 'DM Sans'; */
   font-style: normal;
   font-weight: 700;
-  font-size: 35.2333px;
+  font-size: 26.2333px;
   line-height: 46px;
   margin: revert;
 
 
 }
-
+b{
+  font-size:17px
+}
 /* Over Ride Stepper */
 .MuiStepLabel-root .MuiSvgIcon-root {
   font-size: 3rem;
@@ -161,7 +169,7 @@ h2 {
   /* font-family: 'DM Sans'; */
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 26px;
 }
 
@@ -169,7 +177,7 @@ h2 {
   /* font-family: 'DM Sans'; */
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 31px;
 
   color: #000000;
@@ -181,11 +189,19 @@ h2 {
   /* font-family: 'DM Sans'; */
   font-style: normal;
   font-weight: 700;
-  font-size: 25.0571px;
+  font-size: 20px;
   line-height: 26px;
   margin-top: 15px;
   color: #FFFFFF;
 
+}
+
+.vehicle-card-text {
+  font-family: 'DM Sans' ;
+  font-Weight: 500 ;
+  font-size:18px ;
+  Line-height: 23.44px;
+  color:  #0E4672;
 }
 
 .thanku {
@@ -228,6 +244,7 @@ h2 {
 .custom-textfield label {
   color: #455E72;
 }
+
 /* ------------------Admin booking page------------------ */
 .admin-booking {
   /* font-family: DM Sans; */
@@ -238,15 +255,16 @@ h2 {
   text-align: left;
   color: #1F3648;
 }
-.label-text{
+
+.label-text {
   /* font-family: DM Sans; */
-font-size: 20px;
-font-weight: 700;
-line-height: 23px;
-text-align: left;
-color: #1F3648;
-padding: 10px;
-margin-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  text-align: left;
+  color: #1F3648;
+  padding: 10px;
+  margin-top: 20px;
 }
 
 .heading-section {
@@ -256,9 +274,10 @@ margin-top: 20px;
   background: #1F3648;
   color: #fff;
   padding: 16px;
-  font-size:large;
+  font-size: large;
 }
-.label-admin-text{
+
+.label-admin-text {
   /* font-family: 'DM Sans'; */
   font-style: normal;
   font-weight: 700;
@@ -267,56 +286,57 @@ margin-top: 20px;
   color: #455E72;
   margin-bottom: 10px;
 }
-.text-admin{
+
+.text-admin {
   /* font-family: DM Sans; */
-font-size: 20px;
-font-weight: 590;
-line-height: 26px;
-letter-spacing: 0em;
-text-align: left;
-color:#1F3648;
-}  
-.table-th{
-  background-color:#F1F9FF;
+  font-size: 20px;
+  font-weight: 590;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1F3648;
+}
+
+.table-th {
+  background-color: #F1F9FF;
 }
 
 /* driver-register */
-.driver-heading{
+.driver-heading {
   font-family: 'DM Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 55px;
-color: #0E4672;
-}
-.text-driver{
-  /* font-family: DM Sans; */
-font-size: 20px;
-font-weight: 400;
-line-height: 26px;
-letter-spacing: 0em;
-text-align: left;
-color:#000000
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 55px;
+  color: #0E4672;
 }
 
-.drive-step{
+.text-driver {
   /* font-family: DM Sans; */
-font-size: 30px;
-font-weight: 500;
-line-height: 39px;
-letter-spacing: 0em;
-text-align: left;
-color:#0E4672
-}
-.drive-step-content{
-  /* font-family: DM Sans; */
-font-size: 30px;
-font-weight: 500;
-line-height: 39px;
-letter-spacing: 0em;
-text-align: left;
-color:#0E4672
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000
 }
 
-  
+.drive-step {
+  /* font-family: DM Sans; */
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0E4672
+}
 
+.drive-step-content {
+  /* font-family: DM Sans; */
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0E4672
+}

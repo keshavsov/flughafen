@@ -17,7 +17,7 @@ import svgImages from '../Assets/Images/svgImages'
 import { useTranslation } from 'react-i18next'
 import { PaymentList } from '../component/PaymentList'
 
-export function VehicleOption({}) {
+export function VehicleOption({ }) {
     const { t } = useTranslation();
     const { EditIcon } = svgImages;
     return (
@@ -31,7 +31,7 @@ export function VehicleOption({}) {
                         </div>
                     </div>
                     <div className="col-sm-9">
-                        <Stapper activeStep={1}/>
+                        <Stapper activeStep={1} />
                     </div>
                 </div>
                 <div className='row '>
@@ -69,45 +69,80 @@ export function VehicleOption({}) {
 
                         <h2>Vehicle List</h2>
                         <div className='row justify-content-center '>
-                            <div className=' col-md-10 col-sm-6 white-card border my-3'>
+                            <div className=' col-md-11 col-sm-6 white-card border my-3'>
 
-                                <div className=" d-flex justify-content-center flex-wrap">
-                                    <img className="card-img-top" src={minibus} alt="Card image cap" style={{ width: "236px", height: "120px" }} />
+                                <div className="row ">
+                                    <div className='col-md-4'>
+                                        <img className="card-img-top" src={minibus} alt="Card image cap" style={{ width: "220px", height: "120px" }} />
+                                    </div>
+                                    <div className='col-md-5 ' style={{ marginLeft: "25px" }}>
+                                        <div className="card-body ">
+                                            <label className='card-text mt-2'>Economy</label>
+                                            <div className='d-flex flex-wrap gap-3 mt-3 '>
+                                                <p className='people-bag'><img src={user} /><b> 2 People </b></p>
+                                                <p className='people-bag'> <b><img src={bag} /></b><b>4 Bag</b>  </p>
+                                            </div>
+
+                                            <p className='vehicle-card-text'>VW Passat, Opel Insignia,<br /> Toyota Avensis</p>
+                                        </div>
+                                    </div>
+                                    <div className='col-md-2 mt-3 p-2'>
+                                        <div className=' card-text '>
+                                            <p>€226.78</p>
+                                            <button className=" btn btn-primary">{t('wah')}</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div className=' col-md-11 col-sm-6 white-card border my-3'>
+
+                                <div className="row ">
+                                    <div className='col-md-4'>
+                                        <img className="card-img-top" src={minibus} alt="Card image cap" style={{ width: "220px", height: "120px" }} />
+                                    </div>
+                                    <div className='col-md-5 ' style={{ marginLeft: "25px" }}>
+                                        <div className="card-body ">
+                                            <label className='card-text mt-2'>Economy</label>
+                                            <div className='d-flex flex-wrap gap-3 mt-3 '>
+                                                <p className='people-bag'><img src={user} /><b> 2 People </b></p>
+                                                <p className='people-bag'> <b><img src={bag} /></b><b>4 Bag</b>  </p>
+                                            </div>
+
+                                            <p className='vehicle-card-text'>VW Passat, Opel Insignia,<br /> Toyota Avensis</p>
+                                        </div>
+                                    </div>
+                                    <div className='col-md-2 mt-3 p-2'>
+                                        <div className=' card-text '>
+                                            <p>€226.78</p>
+                                            <button className=" btn btn-primary">{t('wah')}</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                            {/* <div className=' col-md-10 white-card border'>
+
+                                <div className=" d-flex justify-content-center ">
+                                    <img className="card-img-top" src={minibus} alt="Card image cap" style={{ width: "200px", height: "120px" }} />
                                     <div className="card-body p-3 ">
                                         <label className='card-text'>Economy</label>
-                                        <div className='d-flex flex-wrap gap-3 '>
+                                        <div className='d-flex gap-3 flex-wrap mt-4'>
                                             <p className='people-bag'><img src={user} /><b> 2 People </b></p>
                                             <p className='people-bag'> <b><img src={bag} /></b><b>4 Bag</b>  </p>
                                         </div>
-
-                                        <p className='Gesamt-text'>VW Passat, Opel Insignia,<br /> Toyota Avensis</p>
+                                        <p className='vehicle-card-text'>VW Passat, Opel Insignia,<br />Toyota Avensis</p>
                                     </div>
-                                    <div className=' card-text p-3'>
+                                    <div className='card-text p-1 mt-2'>
                                         <p>€226.78</p>
                                         <button className=" btn btn-primary">{t('wah')}</button>
                                     </div>
                                 </div>
 
-                            </div>
-                            <div className=' col-md-10 white-card border'>
-
-                                <div className=" d-flex justify-content-center flex-wrap">
-                                    <img className="card-img-top" src={minibus} alt="Card image cap" style={{ width: "236px", height: "120px" }} />
-                                    <div className="card-body p-3">
-                                        <label className='card-text'>Economy</label>
-                                        <div className='d-flex gap-3 flex-wrap'>
-                                            <p className='people-bag'><img src={user} /><b> 2 People </b></p>
-                                            <p className='people-bag'> <b><img src={bag} /></b><b>4 Bag</b>  </p>
-                                        </div>
-                                        <p className='Gesamt-text'>VW Passat, Opel Insignia,<br /> Toyota Avensis</p>
-                                    </div>
-                                    <div className='card-text p-3'>
-                                        <p>€226.78</p>
-                                        <button className=" btn btn-primary">{t('wah')}</button>
-                                    </div>
-                                </div>
-
-                            </div>
+                            </div> */}
                         </div>
 
                     </div>
