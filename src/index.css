@@ -51,14 +51,23 @@ body {
   text-align: center;
 }
 
-.link-text {
-  font-size: 15.7236px;
+/* .link-text {
+  
+  margin: 3px -12px 2px -6px;
+  font-family: 'DM Sans';
+ 
+} */
+.link {
+  text-decoration: none;
+  color:#000000;
+  font-style: normal;
   font-weight: 500;
+  font-size: 15.6592px;
+  line-height: 20px;
   text-align: center;
   white-space: nowrap;
-  margin: 3px -12px 2px -6px;
 }
-
+ 
 
 .p {
   /* font-family: 'DM Sans'; */
@@ -97,25 +106,41 @@ body {
 
 .footer-text {
   /* font-family: 'DM Sans'; */
-  font-size: 22px;
+  font-size: 19px;
   font-weight: 700
 }
 
 .footer-text-header {
   /* font-family: 'DM Sans'; */
+  font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 20.4037px;
   line-height: 36px;
+  white-space: nowrap;
 
   color: #FFFFFF;
 }
 
 .footer-blog-text {
   /* font-family: 'DM Sans'; */
-  font-size: 18.3px;
-  line-height: 23px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.8677px;
+  line-height: 26px;
+
   color: #FFFFFF;
+}
+.footer-link{
+  text-decoration: none;
+  color:#97ADBE;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15.6592px;
+  line-height: 20px;
+  text-align: center;
+  /* white-space: nowrap; */
 }
 
 h2 {
@@ -128,9 +153,11 @@ h2 {
 
 
 }
-b{
-  font-size:17px
+
+b {
+  font-size: 17px
 }
+
 /* Over Ride Stepper */
 .MuiStepLabel-root .MuiSvgIcon-root {
   font-size: 3rem;
@@ -177,7 +204,7 @@ b{
   /* font-family: 'DM Sans'; */
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 31px;
 
   color: #000000;
@@ -197,11 +224,11 @@ b{
 }
 
 .vehicle-card-text {
-  font-family: 'DM Sans' ;
-  font-Weight: 500 ;
-  font-size:18px ;
+  font-family: 'DM Sans';
+  font-Weight: 500;
+  font-size: 18px;
   Line-height: 23.44px;
-  color:  #0E4672;
+  color: #0E4672;
 }
 
 .thanku {
@@ -215,16 +242,6 @@ b{
 
 .custom-select:focus {
   outline: none;
-}
-
-.link {
-  text-decoration: none;
-  color: gray;
-  padding-right: 2rem;
-  /* font-family: 'DM Sans'; */
-  /* font-weight: 700; */
-  font-size: medium;
-
 }
 
 
@@ -303,11 +320,11 @@ b{
 
 /* driver-register */
 .driver-heading {
-  font-family: 'DM Sans';
+  /* font-family: 'DM Sans'; */
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 55px;
+  font-size: 32px;
+  line-height: 52px;
   color: #0E4672;
 }
 

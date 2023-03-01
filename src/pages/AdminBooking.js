@@ -150,7 +150,7 @@ export function AdminBooking() {
                             <div className='col-md-8 text-admin'>Baby Seat (0 Months - 9 Months)</div>
                             <div className='col-md-1 pb-2 label-text mt-auto'>5</div>
                             <div className='col-md-3 '>
-                                <div className='rounded-pill  d-flex mx-4 ' >
+                                <div className='rounded-pill d-flex   ' >
                                     <span className='w-50 puls-minus-btn-darkblue' onClick={""}>+</span>
                                     <span className='w-50 puls-minus-btn-skyblue' onClick={""}>-</span>
                                 </div>
@@ -161,7 +161,7 @@ export function AdminBooking() {
                             <div className='col-md-8 text-admin'>Child Seat (9 Month - 4 Years)</div>
                             <div className='col-md-1 pb-2 label-text mt-auto'>5</div>
                             <div className='col-md-3'>
-                                <div className='rounded-pill bg-secondary d-flex mx-4 ' >
+                                <div className='rounded-pill bg-secondary d-flex  ' >
                                     <span className='w-50 puls-minus-btn-darkblue' onClick={""}>+</span>
                                     <span className='w-50 puls-minus-btn-skyblue' onClick={""}>-</span>
                                 </div>
@@ -173,7 +173,7 @@ export function AdminBooking() {
                             <div className='col-md-1 pb-2 label-text mt-auto'>5</div>
                             <div className='col-md-3'>
                                 <div>
-                                    <div className='rounded-pill bg-secondary d-flex mx-4 ' >
+                                    <div className='rounded-pill bg-secondary d-flex  ' >
                                         <span className='w-50 puls-minus-btn-darkblue' onClick={""}>+</span>
                                         <span className='w-50 puls-minus-btn-skyblue' onClick={""}>-</span>
                                     </div>
@@ -190,7 +190,7 @@ export function AdminBooking() {
                             <div className='col-md-8 text-admin'>Silber </div>
                             <div className='col-md-1 pb-2 label-text mt-auto'>5</div>
                             <div className='col-md-3'>
-                                <div className='rounded-pill bg-secondary d-flex mx-4 ' >
+                                <div className='rounded-pill bg-secondary d-flex ' >
                                     <span className='w-50 puls-minus-btn-darkblue' onClick={""}>+</span>
                                     <span className='w-50 puls-minus-btn-skyblue' onClick={""}>-</span>
                                 </div>
@@ -201,7 +201,7 @@ export function AdminBooking() {
                             <div className='col-md-8 text-admin'>Gold </div>
                             <div className='col-md-1 pb-2 label-text mt-auto'>5</div>
                             <div className='col-md-3'>
-                                <div className='rounded-pill bg-secondary d-flex mx-4 ' >
+                                <div className='rounded-pill bg-secondary d-flex ' >
                                     <span className='w-50 puls-minus-btn-darkblue' onClick={""}>+</span>
                                     <span className='w-50 puls-minus-btn-skyblue' onClick={""}>-</span>
                                 </div>
@@ -212,7 +212,7 @@ export function AdminBooking() {
                             <div className='col-md-8 text-admin'>Platin </div>
                             <div className='col-md-1 pb-2 label-text mt-auto'>5</div>
                             <div className='col-md-3'>
-                                <div className='rounded-pill bg-secondary d-flex mx-4 ' >
+                                <div className='rounded-pill bg-secondary d-flex  ' >
                                     <span className='w-50 puls-minus-btn-darkblue' onClick={""}>+</span>
                                     <span className='w-50 puls-minus-btn-skyblue' onClick={""}>-</span>
                                 </div>
@@ -227,7 +227,7 @@ export function AdminBooking() {
                             <div className='col-md-8 text-admin'>Rollstuhl </div>
                             <div className='col-md-1 pb-2 label-text mt-auto'>5</div>
                             <div className='col-md-3'>
-                                <div className='rounded-pill bg-secondary d-flex mx-4 ' >
+                                <div className='rounded-pill bg-secondary d-flex ' >
                                     <span className='w-50 puls-minus-btn-darkblue' onClick={""}>+</span>
                                     <span className='w-50 puls-minus-btn-skyblue' onClick={""}>-</span>
                                 </div>

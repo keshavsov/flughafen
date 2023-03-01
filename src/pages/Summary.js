@@ -26,13 +26,18 @@ export function Summary() {
                 </div>
                 <div className='row'>
                     <div className='col-md-3 text-white p-4' style={{ background: "#1A1F23", marginBottom: "auto" }}>
-
-                        <span className='vehicle-option-sider-text pt-2' >
-                            Kontakt -
-                            undrechnungsinformationen
-                        </span>
-                        {/* <EditIcon /> */}
-                        <span style={{ textAlign: "right", marginLeft: "1%" }}><button className='btn rounded-pill bg-white px-4 '> <b>Edit</b> </button></span>
+                        <div className='row mb-3'>
+                            <div className='col-md-9 mt-3'>
+                                <span className='vehicle-option-sider-text ' >
+                                    Kontakt -
+                                    undrechnungsinformationen
+                                </span>
+                                {/* <EditIcon /> */}
+                            </div>
+                            <div className='col-md-2 col-order-1'>
+                                <span><button className='btn rounded-pill bg-white px-3 '> <b>Edit</b> </button></span>
+                            </div>
+                        </div>
                         <div className='pb-3'>
                             <label className='Gesamt-text'>Vorname</label>
                             <p className='vehicle-option-sider-text'>z</p>
@@ -48,9 +53,9 @@ export function Summary() {
 
                         </div>
                         <hr style={{ border: "5px solid slategrey", width: "100%" }}></hr>
-                        <div className='mt-4'>
-                            <span className='vehicle-option-sider-text ' >Zahlungsmethode</span>
-                            <span style={{ textAlign: "right", marginLeft: "29%" }}><button className='btn rounded-pill bg-white px-4 '> <b>Edit</b> </button></span>
+                        <div className='mt-4 '>
+                            <span className='vehicle-option-sider-text px-3'>Zahlungsmethode</span>
+                            <span ><button className='btn rounded-pill bg-white px-4 '> <b>Edit</b> </button></span>
 
                             <label className='Gesamt-text mt-3'>Deine Wahl</label>
                             <p className='vehicle-option-sider-text'>Barzahlung</p>
@@ -120,7 +125,7 @@ export function Summary() {
                         <div className='p-5 text-center white-card mt-4'>
                             <h5>{t('diskcount')}</h5>
                         </div>
-                        <PaymentList path="/done" buttonName="Book Now"/>
+                        <PaymentList path="/done" buttonName="Book Now" />
                     </div>
 
                 </div>

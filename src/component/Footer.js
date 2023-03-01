@@ -12,7 +12,7 @@ export function Footer() {
   <div style={{marginTop:"10%"}}>
     <footer className="bd-footer position-relative py-3 mt-5 " style={{ backgroundColor: "#11191F" }} >
       <div className="position-absolute w-100" style={{ top: "-75px" }}>
-        <div className='container p-5  rounded ' style={{ background: "#0E4672" }}>
+        <div className='container p-4  rounded ' style={{ background: "#0E4672" }}>
           <div className='row text-white'>
             <div className='col-md-4 text-center p-1' >
               <AvatarSvg height='20' width='20' />
@@ -39,27 +39,30 @@ export function Footer() {
               <span><img src={logo} width="170%" /></span>
             </a>
             <ul className="list-unstyled small text-muted">
-              <li className="mb-2 text-light footer-blog-text "> Airport TransportTaxi is an independent taxi calculator for planning, ordering and billing of taxi and airport transfers. On the basis of current taxi prices, we calculate the distance and time-dependent taxi costs.</li>
+              <li className="mb-2 text-light footer-blog-text "> Airport TransportTaxi is an independent taxi 
+              calculator for planning, ordering and billing of taxi and airport 
+              transfers. On the basis of current taxi prices, we calculate the distance
+               and time-dependent taxi costs.</li>
 
             </ul>
           </div>
           <div className="col-3 col-lg-2 offset-lg-1 mb-3">
             <h5 className='text-light footer-text-header'>Links</h5>
             <ul className="list-unstyled">
-              <li className="mb-2"><Link to="/">Home</Link></li>
-              <li className="mb-2"><Link to="/">Home</Link></li>
+              <li className="mb-2"><Link className="footer-link" to="/">Home</Link></li>
+              <li className="mb-2"><Link className="footer-link"to="/">Home</Link></li>
             </ul>
           </div>
           <div className="col-3 col-lg-2 mb-3">
             <h5 className='text-light footer-text-header'>Working Hours</h5>
             <ul className="list-unstyled">
-              <li className="mb-2 "><Link to="/">We are there for you around the clock, 24/7, 365 days a year.</Link></li>
+              <li className="mb-2 "><Link  className="footer-link" to="/">We are there for you around the clock, 24/7, 365 days a year.</Link></li>
             </ul>
           </div>
           <div className="col-3 col-lg-2 mb-3">
             <h5 className='text-light footer-text-header'>Tax Number</h5>
             <ul className="list-unstyled">
-              <li className="mb-2"><Link to="">2186361508</Link></li>
+              <li className="mb-2"><Link className="footer-link" to="">2186361508</Link></li>
 
             </ul>
           </div>
