@@ -2,7 +2,13 @@ import React from 'react'
 import doneImg from '../Assets/Images/img_done11.png'
 import mmm from '../Assets/Images/Frame 19.png'
 import backarrow from '../Assets/Images/Line 85.png'
+import { useNavigate } from 'react-router-dom'
+
 export  function Done() {
+  const navigate=useNavigate()
+  const onhandleBack=()=>{
+    navigate("/home")
+  }
   return (<>  
     <div className='container-fluid '>
         <div className='row '>
@@ -14,7 +20,7 @@ export  function Done() {
             <p></p>
             <p className='span'>Ride Booking</p>
             <p className='thanku'>Thank you for your order</p>
-            <button className='btn btn-primary'><img src={backarrow} width="65px" /> Back To Home</button>
+            <button className='btn btn-primary' onClick={onhandleBack}><img src={backarrow} width="65px" /> Back To Home</button>
             </div>
 
         </div>
