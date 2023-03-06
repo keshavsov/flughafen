@@ -1,18 +1,38 @@
 import { Visibility, VisibilityOff } from '@mui/icons-material';
 import IconButton from '@mui/material/IconButton'
-import { FormControl, InputAdornment, InputLabel, MenuItem, Select, TextField,Input } from '@mui/material'
+import { FormControl, InputAdornment, InputLabel, MenuItem, Select, TextField, Input, styled, Grid, Button } from '@mui/material'
 import { Box } from '@mui/system';
 import React from 'react'
 // import { Input } from 'reactstrap';
+const DriveRegisWrapper = styled('form')({
+    'fieldset': {
+        borderWidth: 0
+    },
+    '.content-fields': {
+        border: '.01px solid lightgray',
+        padding: '10px'
+    },
+    '.MuiOutlinedInput-notchedOutline': {
+        borderWidth: '0 !important'
+    },
+    '.Button': {
+        backgroundColor: "#0E4672",
+        color: 'white'
+    },
+    '.Button:hover': {
+        backgroundColor: "#0E4672",
+        color: 'white'
+    }
+});
 
 export function DriverRegistration() {
     const [journey, setJourney] = React.useState();
     const [showPassword, setShowPassword] = React.useState(false);
     const handleClickShowPassword = () => setShowPassword((show) => !show);
 
-  const handleMouseDownPassword = (event) => {
-    event.preventDefault();
-  };
+    const handleMouseDownPassword = (event) => {
+        event.preventDefault();
+    };
 
 
     const handleJourney = (e) => {
@@ -53,37 +73,43 @@ export function DriverRegistration() {
                 <div className='row mt-5 '>
                     <div className='col-md-12 '>
                         <div className='label-text border' style={{ backgroundColor: "#E6E6E6" }}>Become Partner</div>
-                        <div className='row mt-4'>
-                            <div className='col-md-6'>
-                                <TextField spacing={4} label="Firstname *" variant='standard' fullWidth /> <br /><br />
-                                <TextField spacing={4} label="Company Name *" variant='standard' fullWidth /> <br /><br />
-                            </div>
-                            <div className='col-md-6'>
-                                <TextField spacing={4} label="Lastname *" variant='standard' fullWidth /> <br /><br />
-                                <TextField spacing={4} label="E-mail Address*" variant='standard' fullWidth /> <br /><br />
-                            </div>
+                        <DriveRegisWrapper>
+                            <Grid container>
+                                <Grid item xs={12} sm={6} md={6} className='content-fields' >
+                                    <TextField label="Firstname *" variant='outlined' fullWidth />
+                                </Grid>
+                                <Grid item xs={12} sm={6} md={6} className='content-fields' >
+                                    <TextField label="Company Name *" variant='outlined' fullWidth />
+                                </Grid>
+                                <Grid item xs={12} sm={6} md={6} className='content-fields'>
+                                    <TextField label="Lastname *" variant='outlined' fullWidth />
+                                </Grid>
+                                <Grid item xs={12} sm={6} md={6} className='content-fields'>
 
-                        </div>
-                        <div className='label-text border' style={{ backgroundColor: "#E6E6E6" }}>Company Address</div>
-                        <div className='row  mt-4'>
-                            <div className='col-md-6'>
-                                <TextField spacing={4} label="address Line 1*" variant='standard' fullWidth /><br /><br />
-                            </div>
-                            <div className='col-md-6'>
-                                <TextField spacing={4} label="address Line 2" variant='standard' fullWidth /><br /><br />
-                            </div>
-                        </div>
-                        <div className='row my-4 p-2 '>
-                            <div className='col-md-3 border '>
-                                <TextField label="City" variant='standard' fullWidth />
+                                    <TextField label="E-mail Address*" variant='outlined' fullWidth />
+                                </Grid>
 
-                            </div>
-                            <div className='col-md-3 border'>
-                                <TextField label="State or Region" variant='standard' fullWidth />
+                            </Grid>
+                            <div className='label-text border' style={{ backgroundColor: "#E6E6E6" }}>Company Address</div>
+                            <Grid container>
+                                <Grid item xs={12} sm={6} md={6} className='content-fields'>
+                                    <TextField label="address Line 1*" variant='outlined' fullWidth />
+                                </Grid>
+                                <Grid item xs={12} sm={6} md={6} className='content-fields' >
+                                    <TextField label="address Line 2" variant='outlined' fullWidth />
+                                </Grid>
+                            </Grid>
+                            <Grid container>
+                                <Grid item xs={12} sm={6} md={3} className='content-fields'>
+                                    <TextField label="City" variant='outlined' fullWidth />
 
-                            </div>
-                            <div className='col-md-3 border'>
-                                <Box >
+                                </Grid>
+                                <Grid item xs={12} sm={6} md={3} className='content-fields'>
+                                    <TextField label="State or Region" variant='outlined' fullWidth />
+
+                                </Grid>
+
+                                <Grid item xs={12} sm={6} md={3} className='content-fields' >
                                     <FormControl fullWidth>
                                         <InputLabel id="JOURNEY TYPE">Countary</InputLabel>
                                         <Select
@@ -98,65 +124,70 @@ export function DriverRegistration() {
                                             <MenuItem value={30}>England</MenuItem>
                                         </Select>
                                     </FormControl>
-                                </Box>
-                            </div>
-                            <div className='col-md-3 border'>
-                                <TextField label="ZIP" variant='standard' fullWidth />
+                                </Grid>
 
-                            </div>
+                                <Grid item xs={12} sm={6} md={3} className='content-fields'>
+                                    <TextField label="ZIP" variant='outlined' fullWidth />
 
-                        </div>
-                        <div className='row  my-4 p-2'>
-                            <div className='col-md-4 border'>
-                                <TextField spacing={4} label="Company City*" variant='standard' fullWidth /><br /><br />
-                            </div>
-                            <div className='col-md-4 border'>
-                                <TextField spacing={4} label="Phone Number*" variant='standard' fullWidth /><br /><br />
-                            </div>
-                            <div className='col-md-4 border'>
-                                <TextField spacing={4} label="Tax Number" variant='standard' fullWidth /><br /><br />
-                            </div>
+                                </Grid>
 
-                        </div>
-                        <div className='row'>
-                            <div className='col-md-6 '>
-                                <TextField spacing={4} label="Website" variant='standard' fullWidth /><br /><br />
-                            </div>
-                            <div className='col-md-6 '>
-                                <TextField spacing={4} label="Username*" variant='standard' fullWidth /><br /><br />
-                            </div>
-                        </div>
-                        <div className='row'>
-                            <div className='col-md-6 '>
-                                <FormControl sx={{ width: '62ch', }} variant="standard" error  helperText="please valid password" >
-                                    <InputLabel htmlFor="standard-adornment-password">Password</InputLabel>
-                                    <Input
-                                        id="standard-adornment-password"
-                                        type={showPassword ? 'text' : 'password'}
-                                        endAdornment={
-                                            <InputAdornment >
-                                                <IconButton
-                                                    aria-label="toggle password visibility"
-                                                    onClick={handleClickShowPassword}
-                                                    onMouseDown={handleMouseDownPassword}
-                                                
+                            </Grid>
+                            <Grid container >
+                                <Grid item xs={12} sm={4} md={4} className='content-fields'>
+                                    <TextField label="Company City*" variant='outlined' fullWidth /><br /><br />
+                                </Grid>
+                                <Grid item xs={12} sm={4} md={4} className='content-fields'>
+                                    <TextField label="Phone Number*" variant='outlined' fullWidth /><br /><br />
+                                </Grid>
+                                <Grid item xs={12} sm={4} md={4} className='content-fields'>
+                                    <TextField label="Tax Number" variant='outlined' fullWidth /><br /><br />
+                                </Grid>
+
+                            </Grid>
+                            <Grid container>
+                                <Grid item xs={12} sm={6} md={6} className='content-fields'>
+                                    <TextField label="Website" variant='outlined' fullWidth /><br /><br />
+                                </Grid>
+                                <Grid item xs={12} sm={6} md={6} className='content-fields'>
+                                    <TextField label="Username*" variant='outlined' fullWidth /><br /><br />
+                                </Grid>
+                            </Grid>
+                            <Grid container>
+                                <Grid item xs={12} sm={6} md={6} className='content-fields'>
+                                    <FormControl sx={{ width: '100%', }} variant="outlined" helperText="please valid password" >
+                                        <InputLabel htmlFor="standard-adornment-password">Password</InputLabel>
+                                        <Input
+                                            id="standard-adornment-password"
+                                            type={showPassword ? 'text' : 'password'}
+                                            endAdornment={
+                                                <InputAdornment >
+                                                    <IconButton
+                                                        aria-label="toggle password visibility"
+                                                        onClick={handleClickShowPassword}
+                                                        onMouseDown={handleMouseDownPassword}
+
                                                     >
-                                                    {showPassword ? <VisibilityOff /> : <Visibility />}
-                                                </IconButton>
-                                            </InputAdornment>
-                                        }
-                                    />
-                                </FormControl>
-                            </div>
-                            <div className='col-md-6 '>
-                                <TextField spacing={4} label="Re-enter your Password*" variant='standard' fullWidth /><br /><br />
-                            </div>
-                        </div>
+                                                        {showPassword ? <VisibilityOff /> : <Visibility />}
+                                                    </IconButton>
+                                                </InputAdornment>
+                                            }
+                                        />
+                                    </FormControl>
+                                </Grid>
+                                <Grid item xs={12} sm={6} md={6} className='content-fields'>
+                                    <TextField label="Re-enter your Password*" variant='outlined' fullWidth /><br /><br />
+                                </Grid>
+                            </Grid>
 
-
+                        </DriveRegisWrapper>
                     </div>
                 </div>
-                <center><button className='btn btn-primary px-5 my-5'>Get Started now</button></center>
+                <DriveRegisWrapper>
+                    <Grid item textAlign={'center'}>
+
+                        <Button className='px-5 my-5 Button'>Get Started now</Button>
+                    </Grid>
+                </DriveRegisWrapper>
 
             </div>
 
