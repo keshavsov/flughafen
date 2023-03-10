@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Checkbox, Stack, TextField } from '@mui/material'
+import { Button, Checkbox, Stack, styled, TextField } from '@mui/material'
 import Stapper from '../component/Elements/Stapper'
 import { useTranslation } from 'react-i18next'
 import svgImages from '../Assets/Images/svgImages'
@@ -9,6 +9,12 @@ import stripe from '../Assets/Images/Group (1).png'
 import { Label } from '@mui/icons-material'
 import { PaymentList } from '../component/PaymentList'
 const { EditIcon } = svgImages;
+
+// const contactWrapper = styled('div')({
+//     'MuiFormLabel-root MuiInputLabel-root': {
+//         color:"white"
+//     }
+// })
 
 export function ContactInfo({ }) {
     const { t } = useTranslation();
@@ -23,7 +29,7 @@ export function ContactInfo({ }) {
                         </div>
                     </div>
                     <div className="col-sm-9">
-                        <Stapper  activeStep={2} />
+                        <Stapper activeStep={2} />
                     </div>
                 </div>
                 <div className='row'>
@@ -35,13 +41,13 @@ export function ContactInfo({ }) {
 
                         </span>
                         <Stack spacing={2} >
-                            <TextField color='error' label="Servicetype" variant="standard" />
-                            <TextField label="Ubertragungsart" variant="standard" />
-                            <TextField label="Ubertragungsart" variant="standard" />
-                            <TextField label="Abholadrsse-Zleladresse" variant="standard" />
-                            <TextField label="Abholdatum-Zeit" variant="standard" />
-                            <TextField label="Entfernung" variant="standard" />
-                            <TextField label="Geschatzte Fahrzeit" variant="standard" />
+                            <TextField className="custom-textfield input" color='error' label="Servicetype" variant="standard" />
+                            <TextField className="custom-textfield input" label="Ubertragungsart" variant="standard" />
+                            <TextField className="custom-textfield input" label="Ubertragungsart" variant="standard" />
+                            <TextField className="custom-textfield input" label="Abholadrsse-Zleladresse" variant="standard" />
+                            <TextField className="custom-textfield input" label="Abholdatum-Zeit" variant="standard" />
+                            <TextField className="custom-textfield input" label="Entfernung" variant="standard" />
+                            <TextField className="custom-textfield input" label="Geschatzte Fahrzeit" variant="standard" />
 
                         </Stack>
                     </div>
@@ -90,7 +96,7 @@ export function ContactInfo({ }) {
                         </div>
                     </div>
                     <div className='col-md-3 mb-5'>
-                        <PaymentList path="/summary" buttonName="Continue"/>
+                        <PaymentList path="/summary" buttonName="Continue" />
 
 
                     </div>

@@ -31,7 +31,7 @@ function App() {
     { path: '/BookingId', element: <BookingIdPage/> },
     { path: '/termCondition', element: <TermAndCondition/> },
 
-    { path: '/footer', element: <Footer /> },
+    { path: '/footer', element: <Footer /> },  
 
 
   ]);

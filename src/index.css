@@ -255,11 +255,12 @@ b {
 }
 
 .custom-textfield .MuiInputBase-root:after {
-  border-bottom: #000
+  border-bottom: #000;
 }
 
 .custom-textfield label {
-  color: #455E72;
+  /* color: #455E72; */
+  color: #fff;
 }
 
 /* ------------------Admin booking page------------------ */
