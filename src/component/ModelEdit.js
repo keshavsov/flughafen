@@ -14,15 +14,15 @@ function ModalFullscreenExample(props) {
 
     return (
         <div>
-            <Button color="danger" onClick={toggle}>
+            <Button color="danger" onClick={toggle} className='mb-5'>
                 Click Me
             </Button>
-            <Modal isOpen={modal} toggle={toggle} fullscreen>
-                <ModalHeader toggle={toggle}>Booking</ModalHeader>
+            <Modal isOpen={modal} toggle={toggle} style={{maxWidth: '1200px', width: '100%'}}>
+                <ModalHeader toggle={toggle}><span className=' label-admin-text '>Booking</span></ModalHeader>
                 <ModalBody>
                     <div className='col-md-12 heading-section '>Customer Details</div>
 
-                    <div className='row my-3 gap-4 '>
+                    <div className='row my-3 gap-4 mx-3'>
 
                         <div className='col-md-3 white-card p-3 border' style={{ backgroundColor: "#F1F9FF" }}>
                             <label className='label-admin-text'>Vorname*</label>
@@ -37,7 +37,7 @@ function ModalFullscreenExample(props) {
                             <label className='label-admin-text'>Telefonummer*</label> <br />
                             <span><GernamySvg /></span><span className='text-admin'>+48 </span><span className='text-admin'>11112344345</span>
                         </div>
-                        <div className='col-md-12 p-3 border my-3'>
+                        <div className='col-md-12 p-2 border my-3 '>
                             <label className='label-admin-text '>Adresse*</label>
                             <p className='text-admin'>Surata Thai Massage, Hauptstraße, Eppelheim, Germany</p>
                         </div>

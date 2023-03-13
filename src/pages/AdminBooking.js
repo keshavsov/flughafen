@@ -248,7 +248,7 @@ export function AdminBooking() {
             </div>
         </div>
         {/* ---------------model-------------- */}
-           <ModalFullscreenExample />
+          <center ><ModalFullscreenExample /></center> 
     </>)
 }
 
