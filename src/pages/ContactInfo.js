@@ -10,11 +10,11 @@ import { Label } from '@mui/icons-material'
 import { PaymentList } from '../component/PaymentList'
 const { EditIcon } = svgImages;
 
-// const contactWrapper = styled('div')({
-//     'MuiFormLabel-root MuiInputLabel-root': {
-//         color:"white"
-//     }
-// })
+const contactWrapper = styled('div')({
+    // 'MuiFormLabel-root MuiInputLabel-root': {
+    //     color:"white"
+    // }
+})
 
 export function ContactInfo({ }) {
     const { t } = useTranslation();
@@ -41,14 +41,13 @@ export function ContactInfo({ }) {
 
                         </span>
                         <Stack spacing={2} >
-                            <TextField className="custom-textfield input" color='error' label="Servicetype" variant="standard" />
-                            <TextField className="custom-textfield input" label="Ubertragungsart" variant="standard" />
-                            <TextField className="custom-textfield input" label="Ubertragungsart" variant="standard" />
-                            <TextField className="custom-textfield input" label="Abholadrsse-Zleladresse" variant="standard" />
-                            <TextField className="custom-textfield input" label="Abholdatum-Zeit" variant="standard" />
-                            <TextField className="custom-textfield input" label="Entfernung" variant="standard" />
-                            <TextField className="custom-textfield input" label="Geschatzte Fahrzeit" variant="standard" />
-
+                            <TextField className='custom-textfield' label="Servicetype" variant="standard" />
+                            <TextField className='custom-textfield' label="Ubertragungsart" variant="standard" />
+                            <TextField className='custom-textfield' label="Ubertragungsart" variant="standard" />
+                            <TextField className='custom-textfield' label="Abholadrsse-Zleladresse" variant="standard" />
+                            <TextField className='custom-textfield' label="Abholdatum-Zeit" variant="standard" />
+                            <TextField className='custom-textfield' label="Entfernung" variant="standard" />
+                            <TextField className='custom-textfield' label="Geschatzte Fahrzeit" variant="standard" />
                         </Stack>
                     </div>
                     <div className='col-md-6 white-card p-3 '>

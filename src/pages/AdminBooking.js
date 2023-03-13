@@ -7,6 +7,7 @@ import { Box } from '@mui/system';
 import pakage from '../Assets/Images/Group (3).png'
 import emoji from '../Assets/Images/g105 (1).png'
 import disability1 from '../Assets/Images/disability 1 (1).png'
+import ModalFullscreenExample from '../component/ModelEdit';
 const { GernamySvg } = svgImage;
 
 export function AdminBooking() {
@@ -19,7 +20,7 @@ export function AdminBooking() {
         setExtraTime(event.target.value);
     };
     return (<>
-    
+
         <div className='container-fluid'>
             <div className='row  bg-white p-2 '>
                 <div className='admin-booking my-4 '>Admin Booking</div>
@@ -246,6 +247,8 @@ export function AdminBooking() {
                 <button className='btn btn-primary w-auto mx-3 px-5 mb-5'>Submit</button>
             </div>
         </div>
+        {/* ---------------model-------------- */}
+           <ModalFullscreenExample />
     </>)
 }
 

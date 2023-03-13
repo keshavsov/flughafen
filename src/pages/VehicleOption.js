@@ -2,7 +2,7 @@ import React from 'react'
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { Box } from '@mui/system';
-import { TextField } from '@mui/material';
+import { Grid, TextField } from '@mui/material';
 import { TableVehicle } from '../component/TableVehicle';
 import Stapper from '../component/Elements/Stapper'
 // ------------images------------
@@ -11,6 +11,8 @@ import buttonIcon2 from '../Assets/Images/g105.png'
 import buttonIcon3 from '../Assets/Images/apps1.png'
 import buttonIcon4 from '../Assets/Images/package.png'
 import minibus from '../Assets/Images/img_minibus.png'
+import minibus2 from '../Assets/Images/img_minivan4pax1460x184.png'
+import minibus3 from '../Assets/Images/img_minibus8seater1460x184.png'
 import user from '../Assets/Images/user1.png'
 import bag from '../Assets/Images/bag1.png'
 import svgImages from '../Assets/Images/svgImages'
@@ -60,10 +62,10 @@ export function VehicleOption({ }) {
                             <h2 ><img src={buttonIcon3} />Extra Optionen</h2>
                         </div>
 
-                        <div className=' d-flex flex-wrap justify-content-evenly  '>
-                            <button className="btn btn-primary "><img src={buttonIcon2} /> Child Seat</button>
-                            <button className="btn btn-primary "> <img src={buttonIcon4} /> Package </button>
-                            <button className="btn btn-primary "> <img src={buttonIcon1} />Wheelchair (Foldable)</button>
+                        <div className=' d-flex flex-wrap justify-content-evenly gap-2  '>
+                            <button className="btn btn-primary btn-sm"><img src={buttonIcon2} /> Child Seat</button>
+                            <button className="btn btn-primary btn-sm"> <img src={buttonIcon4} /> Package </button>
+                            <button className="btn btn-primary btn-sm"> <img src={buttonIcon1} />Wheelchair (Foldable)</button>
                         </div>
                         <TableVehicle />
 
@@ -71,11 +73,11 @@ export function VehicleOption({ }) {
                         <div className='row justify-content-center '>
                             <div className=' col-md-11 col-sm-6 white-card border my-3'>
 
-                                <div className="row ">
-                                    <div className='col-md-4'>
-                                        <img className="card-img-top" src={minibus} alt="Card image cap" style={{ width: "220px", height: "120px" }} />
-                                    </div>
-                                    <div className='col-md-5 ' style={{ marginLeft: "25px" }}>
+                                <Grid container>
+                                    <Grid item md={5} xm={4} textAlign="center">
+                                        <img className="card-img-top" src={minibus} alt="Card image cap" style={{ width: "177px", height: "115px" }} />
+                                    </Grid>
+                                    <Grid item md={5} xm={4}>
                                         <div className="card-body ">
                                             <label className='card-text mt-2'>Economy</label>
                                             <div className='d-flex flex-wrap gap-3 mt-3 '>
@@ -85,23 +87,23 @@ export function VehicleOption({ }) {
 
                                             <p className='vehicle-card-text'>VW Passat, Opel Insignia,<br /> Toyota Avensis</p>
                                         </div>
-                                    </div>
-                                    <div className='col-md-2 mt-3 p-2'>
-                                        <div className=' card-text '>
+                                    </Grid>
+                                    <Grid item md={2} textAlign="center">
+                                        <div className=' card-text mt-2'>
                                             <p>€226.78</p>
-                                            <button className=" btn btn-primary">{t('wah')}</button>
+                                            <button className=" btn btn-primary ">{t('wah')}</button>
                                         </div>
-                                    </div>
-                                </div>
+                                    </Grid>
+                                </Grid>
 
                             </div>
                             <div className=' col-md-11 col-sm-6 white-card border my-3'>
 
-                                <div className="row ">
-                                    <div className='col-md-4'>
-                                        <img className="card-img-top" src={minibus} alt="Card image cap" style={{ width: "220px", height: "120px" }} />
-                                    </div>
-                                    <div className='col-md-5 ' style={{ marginLeft: "25px" }}>
+                                <Grid container>
+                                    <Grid item md={5} xm={4} textAlign="center">
+                                        <img className="card-img-top" src={minibus2} alt="Card image cap" style={{ width: "177px", height: "115px" }} />
+                                    </Grid>
+                                    <Grid item md={5} xm={4}>
                                         <div className="card-body ">
                                             <label className='card-text mt-2'>Economy</label>
                                             <div className='d-flex flex-wrap gap-3 mt-3 '>
@@ -111,38 +113,45 @@ export function VehicleOption({ }) {
 
                                             <p className='vehicle-card-text'>VW Passat, Opel Insignia,<br /> Toyota Avensis</p>
                                         </div>
-                                    </div>
-                                    <div className='col-md-2 mt-3 p-2'>
-                                        <div className=' card-text '>
+                                    </Grid>
+                                    <Grid item md={2} textAlign="center">
+                                        <div className=' card-text mt-2'>
                                             <p>€226.78</p>
-                                            <button className=" btn btn-primary">{t('wah')}</button>
+                                            <button className=" btn btn-primary ">{t('wah')}</button>
                                         </div>
-                                    </div>
-                                </div>
+                                    </Grid>
+                                </Grid>
 
                             </div>
 
 
 
-                            {/* <div className=' col-md-10 white-card border'>
+                            <div className=' col-md-11 col-sm-6 white-card border my-3'>
 
-                                <div className=" d-flex justify-content-center ">
-                                    <img className="card-img-top" src={minibus} alt="Card image cap" style={{ width: "200px", height: "120px" }} />
-                                    <div className="card-body p-3 ">
-                                        <label className='card-text'>Economy</label>
-                                        <div className='d-flex gap-3 flex-wrap mt-4'>
-                                            <p className='people-bag'><img src={user} /><b> 2 People </b></p>
-                                            <p className='people-bag'> <b><img src={bag} /></b><b>4 Bag</b>  </p>
+                                <Grid container>
+                                    <Grid item md={5} xm={4} textAlign="center">
+                                        <img className="card-img-top" src={minibus3} alt="Card image cap" style={{ width: "177px", height: "115px" }} />
+                                    </Grid>
+                                    <Grid item md={5} xm={4}>
+                                        <div className="card-body ">
+                                            <label className='card-text mt-2'>Economy</label>
+                                            <div className='d-flex flex-wrap gap-3 mt-3 '>
+                                                <p className='people-bag'><img src={user} /><b> 2 People </b></p>
+                                                <p className='people-bag'> <b><img src={bag} /></b><b>4 Bag</b>  </p>
+                                            </div>
+
+                                            <p className='vehicle-card-text'>VW Passat, Opel Insignia,<br /> Toyota Avensis</p>
                                         </div>
-                                        <p className='vehicle-card-text'>VW Passat, Opel Insignia,<br />Toyota Avensis</p>
-                                    </div>
-                                    <div className='card-text p-1 mt-2'>
-                                        <p>€226.78</p>
-                                        <button className=" btn btn-primary">{t('wah')}</button>
-                                    </div>
-                                </div>
+                                    </Grid>
+                                    <Grid item md={2} textAlign="center">
+                                        <div className=' card-text mt-2'>
+                                            <p>€226.78</p>
+                                            <button className=" btn btn-primary ">{t('wah')}</button>
+                                        </div>
+                                    </Grid>
+                                </Grid>
 
-                            </div> */}
+                            </div>
                         </div>
 
                     </div>

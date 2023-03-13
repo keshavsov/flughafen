@@ -251,7 +251,9 @@ b {
 }
 
 .custom-textfield .Mui-focused {
-  color: #455E72 !important;
+  color: #11619e !important;
+  font-size: large;
+  font-weight: bold;
 }
 
 .custom-textfield .MuiInputBase-root:after {
