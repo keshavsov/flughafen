@@ -23,15 +23,15 @@ export default function Home() {
   const [journey, setJourney] = React.useState('');
   const [extraTime, setExtraTime] = React.useState('');
   const { t } = useTranslation();
-  const nav=useNavigate()
-  
+  const nav = useNavigate()
+
   const handleJourney = (event) => {
     setJourney(event.target.value);
   };
   const handleExtraTime = (event) => {
     setExtraTime(event.target.value);
   };
-  const handleHomepage=()=>{
+  const handleHomepage = () => {
     nav('/vehicle')
   }
   return (<>
@@ -39,7 +39,7 @@ export default function Home() {
       <div className='row'>
         <div className='col col-md-7 col-sm-12 rounded my-3  p-3'>
           <form >
-           
+
             <div className='row my-5'>
               <div className='col-md-6 col-sm-12'>
                 <TextField spacing={4} label="From" variant='filled' fullWidth />
@@ -49,55 +49,55 @@ export default function Home() {
                 <TextField spacing={4} label="To" variant='filled' fullWidth />
               </div>
             </div>
-           
+
             <details>
               <summary className='span'>More Details</summary>
-            <div className='row my-5'>
-              <div className='col-md-6 col-sm-12'>
+              <div className='row my-5'>
+                <div className='col-md-6 col-sm-12'>
 
-                <ResponsiveDatePickers label="Date"/>
+                  <ResponsiveDatePickers label="Date" />
+                </div>
+                <div className='col-md-6 col-sm-12' >
+                  <BasicTimePicker label="Time" />
+                </div>
               </div>
-              <div className='col-md-6 col-sm-12' >
-                <BasicTimePicker label="Time"/>
-              </div>
-            </div>
-            <div className='row my-5'>
-              <div className='col col-md-6 col-sm-12 '>
+              <div className='row my-5'>
+                <div className='col col-md-6 col-sm-12 '>
 
-                <Box spacing={4}>
-                  <FormControl fullWidth>
-                    <InputLabel id="JOURNEY TYPE">JOURNEY TYPE</InputLabel>
-                    <Select
-                      labelId="demo-simple-select-label"
+                  <Box spacing={4}>
+                    <FormControl fullWidth>
+                      <InputLabel id="JOURNEY TYPE">JOURNEY TYPE</InputLabel>
+                      <Select
+                        labelId="demo-simple-select-label"
 
-                      value={journey}
-                      label="JOURNEY TYPE"
-                      onChange={handleJourney}
-                    >
-                      <MenuItem value={10}>One Way </MenuItem>
-                      <MenuItem value={20}>Return</MenuItem>
-                    </Select>
-                  </FormControl>
-                </Box>
-              </div>
+                        value={journey}
+                        label="JOURNEY TYPE"
+                        onChange={handleJourney}
+                      >
+                        <MenuItem value={10}>One Way </MenuItem>
+                        <MenuItem value={20}>Return</MenuItem>
+                      </Select>
+                    </FormControl>
+                  </Box>
+                </div>
 
-              <div className='col col-md-6 col-sm-12 '>
-                <Box>
-                  <FormControl fullWidth>
-                    <InputLabel id="JOURNEY TYPE">EXTRA TIME</InputLabel>
-                    <Select
-                      value={extraTime}
-                      label="EXTRA TIME"
-                      onChange={handleExtraTime}
-                    >
-                      <MenuItem value={10}>Ten</MenuItem>
-                      <MenuItem value={20}>Twenty</MenuItem>
-                      <MenuItem value={30}>Thirty</MenuItem>
-                    </Select>
-                  </FormControl>
-                </Box>
+                <div className='col col-md-6 col-sm-12 '>
+                  <Box>
+                    <FormControl fullWidth>
+                      <InputLabel id="JOURNEY TYPE">EXTRA TIME</InputLabel>
+                      <Select
+                        value={extraTime}
+                        label="EXTRA TIME"
+                        onChange={handleExtraTime}
+                      >
+                        <MenuItem value={10}>Ten</MenuItem>
+                        <MenuItem value={20}>Twenty</MenuItem>
+                        <MenuItem value={30}>Thirty</MenuItem>
+                      </Select>
+                    </FormControl>
+                  </Box>
+                </div>
               </div>
-            </div>
             </details>
             <p></p>
 
@@ -106,14 +106,14 @@ export default function Home() {
 
           </form>
         </div>
-        <div className='col  col-md-5 my-4 white-card' style={{ placeContent: "center", display: "grid" }}>
-          <img src={home1} alt="no img" height="430rem" />
+        <div className='col-md-5 col-sm-12 my-4 white-card'>
+          <img src={home1} height="auto" width="100%" id="image-section" />
         </div>
       </div>
       <duv className="container ">
         <div className='row'>
           <div className='col py-3 px-6' style={{ backgroundColor: "#EEF9FF" }}>
-            <center> <img src={logo} />
+            <center> <img src={logo} height="auto" width="auto" id="image-section" />
               <h3 style={{ color: "#0E4672" }}>Blu Airport Transfer</h3>
             </center>
             <center><p className='span-text'>
@@ -122,60 +122,60 @@ export default function Home() {
         </div>
       </duv>
 
-      <div className='container'>
-        <div className='row my-5'>
-          <div className='col text-white d-flex mx-5 styleShadow rounded' style={{ backgroundColor: "#0E4672" }}>
-            <div className='col col-md-6 col-sm-6 p-3'>
-              <div>
-                <h2>General information</h2>
-                <p className='span-text'>You can book your transfers directly online through our online forms, we are also available for you by phone and WhatsApp.</p>
-              </div>
-              <div>
-                <h2>Payment options</h2>
-                <p className='span-text'>You can pay via Paypal, credit card, cash or prepayment via invoice.</p>
-              </div>
-            </div>
-            <div className='vertical-line'></div>
-            <div className='col  col-md-6 col-sm-6 p-3'>
-              <div>
-                <h2>Call now</h2>
-                <h4 className='my-4'>+49 178 8404957</h4>
-              </div>
-              <div >
-                <button class='btn btn-primary'>Book now</button>
-              </div>
 
+      < div className='container '>
+
+        <div className='row mx-5 text-white d-flex flex-wrap rounded shadow22' style={{ backgroundColor: "#0E4672" }}>
+          <div className='col-md-5 col-sm-6 px-3'>
+            <div>
+              <h2>General information</h2>
+              <p className='span-text'>You can book your transfers directly online through our online forms, we are also available for you by phone and WhatsApp.</p>
             </div>
+            <div>
+              <h2>Payment options</h2>
+              <p className='span-text'>You can pay via Paypal, credit card, cash or prepayment via invoice.</p>
+            </div>
+          </div>
+          <div className='col vertical-line'></div>
+          <div className='col-md-5 col-sm-12 p-4'>
+            <div>
+              <h2>Call now</h2>
+              <h4 className='my-4'>+49 178 8404957</h4>
+            </div>
+            <div >
+              <button class='btn btn-primary'>Book now</button>
+            </div>
+
           </div>
         </div>
 
-
-
       </div>
+
+
       {/* ---------------pending---------- */}
       <div className='container'>
-        <div className='row py-4'>
+        <div className='row mt-5'>
           <center>
             <div>
-              <h2> How it works?</h2>
+              <h2 className=''> How it works?</h2>
               <p className="span text-dark">The easiest way to book and arrive to your  desired<br /> destination from/to the airport.</p>
             </div>
           </center>
           <div className='row ml-2 mt-2 '>
-            <div className='col-md-4 position-relative my-2'><img src={group1} width="200" height="200" />
+            <div className='col-md-4 position-relative my-2'><img src={group1} height="auto" width="60%" id="image-section" />
               <label className='position-absolute text-position'>Book online easily<br /> through our website</label>
             </div>
-            <div className='col-md-4 position-relative my-2'><img src={group2} width="200" height="200" />
+            <div className='col-md-4 position-relative my-2'><img src={group2} height="auto" width="60%" id="image-section" />
               <label className='position-absolute text-position'>Book online easily<br /> through our website</label>
             </div>
-            <div className='col-md-4 position-relative my-2'><img src={group3} width="200" height="200" />
+            <div className='col-md-4 position-relative my-2'><img src={group3} height="auto" width="60%" id="image-section" />
               <label className='position-absolute text-position'>Book online easily<br /> through our website</label>
             </div>
 
-            <div className='col-md-4 position-relative my-2'><img src={group4} width="200" height="200" />
+            <div className='col-md-4 position-relative my-2'><img src={group4} height="auto" width="60%" id="image-section" />
               <label className='position-absolute text-position'>Book online easily<br /> through our website</label>
             </div>
-            <div className='col-md-4 position-relative'><img src={group5} width="200" height="200" />
+            <div className='col-md-4 position-relative'><img src={group5} height="auto" width="60%" id="image-section" />
               <label className='position-absolute text-position'>Book online easily<br /> through our website</label>
             </div>
 
@@ -196,7 +196,7 @@ export default function Home() {
           </div>
         </div>
         <div className='col-md-5 col-sm-12'>
-          <img src={home2} height="400px" width="430px" />
+          <img src={home2} height="auto" width="100%" id="image-section" />
 
         </div>
       </div>
@@ -232,7 +232,7 @@ export default function Home() {
       </div>
       <div className='row py-3 mx-3'>
         <div className='col-md-6'>
-          <img src={couple} width='500px' />
+          <img src={couple} height="auto" width="100%" id="image-section" />
         </div>
         <div className='col-md-6'>
           <h2> Advantage of using airport <br /> transfer </h2> <br />
@@ -245,5 +245,7 @@ export default function Home() {
     </div>
   </>)
 }
+
+
 
 

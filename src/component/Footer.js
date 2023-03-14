@@ -37,7 +37,7 @@ export function Footer() {
 
           <div className="col-md-4 col-sm-3 col-xs-3 mt-3" style={{textAlign:"justify"}}>
             <a className="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
-              <span><img src={logo} width="170%" /></span>
+              <span><img src={logo}  height="100vh" width="100%" id="image-section" /></span>
             </a>
             <ul className="list-unstyled small text-muted">
               <li className="mb-2 text-light footer-blog-text "> Airport TransportTaxi is an independent taxi 
