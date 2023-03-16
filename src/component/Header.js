@@ -19,7 +19,7 @@ export default function Header() {
 
   const [dropValue, setDropValue] = useState("Become Partner");
   const [isOpen, setIsOpen] = useState(false)
-  const navigate=useNavigate()
+  const navigate = useNavigate()
 
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -28,10 +28,10 @@ export default function Header() {
   const handleChange = (e) => {
     setDropValue(e.target.value);
   }
- const handleRegistration=()=>{
-  navigate("/driver-reg")
+  const handleRegistration = () => {
+    navigate("/driver-reg")
 
- }
+  }
   return (
     <div>
       <div className='top-header d-flex gap-4 p-2 ' style={{ background: '#F5F8FA' }}>
@@ -64,11 +64,11 @@ export default function Header() {
           <Nav className="ml-auto" navbar>
             <NavItem>
               <NavLink className='link-text'>
-                <Link to="/home" className='link-text link '>Calculate & Price Book</Link>
+                <Link to="/home" className='link '>Calculate & Price Book</Link>
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className='link-text'>
+              <NavLink className=''>
                 <Link to="#" className='link' >
                   About Us
                 </Link>
@@ -76,61 +76,66 @@ export default function Header() {
             </NavItem>
             <NavItem>
               <NavLink className='link-text'>
-                {/* <Link to="#" className='link-text link'>Business account</Link> */}
+                {/* <Link to="#" className=' link'>Business account</Link> */}
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink className='link-text'>
-                <Link to="#" className='link-text link'>Imprint</Link>
+                <Link to="#" className=' link'>Imprint</Link>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink className='link-text'>
                 {/* <Link to="#" className='link-text link'>News & Updates</Link> */}
-                <Link to="/adminbooking" className='link-text link'>AdminBooking</Link>
+                <Link to="/adminbooking" className=' link'>AdminBooking</Link>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink>
-                <Link to="/drive-vehicle" className='link-text link'>Driver&vehicle</Link>
+                <Link to="/drive-vehicle" className=' link'>Driver&vehicle</Link>
               </NavLink>
+            </NavItem>
+            <NavItem className=' link'>
+
+              <Button
+              
+                size='small'
+                variant="contained"
+                sx={{ padding: "8px" }}
+                onClick={handleRegistration}
+              >Registration
+              </Button>
+            </NavItem>
+            <NavItem className=' link'>
+                <Select
+                
+                  size='small'
+                  onChange={handleChange}
+                  value={dropValue}
+                >
+                  <MenuItem value='Become Partner' >Become Partner</MenuItem>
+                  <MenuItem value='Business Agent'>Business/ Agent</MenuItem>
+                  <MenuItem value='Driver Carrier'>Driver/ Carrier</MenuItem>
+                </Select>
+
             </NavItem>
           </Nav>
 
-
-
         </Collapse>
+              
         <div className='d-flex gap-3 flex-wrap white-space-nowrap' >
           <div>
             <Link to="/" class="btn btn-outline link" sx={{ padding: "8px" }}> Login</Link>
           </div>
 
-          <div>
-            <Button
-              size='small'
-              variant="contained"
-              sx={{ padding: "8px" }}
-              onClick={handleRegistration}
-            >Registration
-            </Button>
-          </div>
+
           {/* <DropdownElement /> */}
-          <Box >
-            <FormControl>
-              <Select
-                size='small'
-                onChange={handleChange}
-                value={dropValue}
-              >
-                <MenuItem value='Become Partner' >Become Partner</MenuItem>
-                <MenuItem value='Business Agent'>Business/ Agent</MenuItem>
-                <MenuItem value='Driver Carrier'>Driver/ Carrier</MenuItem>
-              </Select>
-            </FormControl>
-          </Box>
+
         </div>
         <TranslateDropdown />
       </Navbar>
     </div>
   );
 }
+
+
