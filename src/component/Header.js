@@ -57,6 +57,7 @@ export default function Header() {
           </span>
         </div>
       </div>
+    <div className='d-flex justify-content-between flex-wrap'>
       <Navbar className='white-card' expand="md">
         <NavbarBrand className='mx-3'><img src={logo} width="180px" height="56px" /></NavbarBrand>
         <NavbarToggler onClick={toggle} />
@@ -95,46 +96,37 @@ export default function Header() {
                 <Link to="/drive-vehicle" className=' link'>Driver&vehicle</Link>
               </NavLink>
             </NavItem>
-            <NavItem className=' link'>
-
-              <Button
-              
-                size='small'
-                variant="contained"
-                sx={{ padding: "8px" }}
-                onClick={handleRegistration}
-              >Registration
-              </Button>
-            </NavItem>
-            <NavItem className=' link'>
-                <Select
-                
-                  size='small'
-                  onChange={handleChange}
-                  value={dropValue}
-                >
-                  <MenuItem value='Become Partner' >Become Partner</MenuItem>
-                  <MenuItem value='Business Agent'>Business/ Agent</MenuItem>
-                  <MenuItem value='Driver Carrier'>Driver/ Carrier</MenuItem>
-                </Select>
-
-            </NavItem>
           </Nav>
-
         </Collapse>
-              
-        <div className='d-flex gap-3 flex-wrap white-space-nowrap' >
-          <div>
-            <Link to="/" class="btn btn-outline link" sx={{ padding: "8px" }}> Login</Link>
-          </div>
-
-
-          {/* <DropdownElement /> */}
-
-        </div>
-        <TranslateDropdown />
       </Navbar>
-    </div>
+      <div className='w-100 d-flex justify-content-between flex-wrap p-2'>
+           <div className='d-flex align-item-center  gap-2'>
+            <Button
+              size='small'
+              variant="contained"
+              sx={{ padding: "8px" }}
+              onClick={handleRegistration}
+            >Registration
+            </Button>
+
+            <Select
+
+              size='small'
+              onChange={handleChange}
+              value={dropValue}
+            >
+              <MenuItem value='Become Partner' >Become Partner</MenuItem>
+              <MenuItem value='Business Agent'>Business/ Agent</MenuItem>
+              <MenuItem value='Driver Carrier'>Driver/ Carrier</MenuItem>
+            </Select>
+            </div>
+            <div className='d-flex gap-2 py-2'>
+            <Link to="/" class="btn btn-outline link" sx={{ padding: "8px" }}> Login</Link>
+            <TranslateDropdown />
+            </div>
+          </div>
+      </div>
+    </div> 
   );
 }
 

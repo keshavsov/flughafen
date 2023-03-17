@@ -126,18 +126,18 @@ export default function Home() {
       < div className='container '>
 
         <div className='row mx-5 text-white d-flex flex-wrap rounded shadow22' style={{ backgroundColor: "#0E4672" }}>
-          <div className='col-md-5 col-sm-6 px-3'>
+          <div className='col-md-6 col-sm-12 px-3'>
             <div>
               <h2>General information</h2>
-              <p className='span-text'>You can book your transfers directly online through our online forms, we are also available for you by phone and WhatsApp.</p>
+              <small className='span-text'>You can book your transfers directly online through our online forms, we are also available for you by phone and WhatsApp.</small>
             </div>
             <div>
               <h2>Payment options</h2>
-              <p className='span-text'>You can pay via Paypal, credit card, cash or prepayment via invoice.</p>
+              <small className='span-text'>You can pay via Paypal, credit card, cash or prepayment via invoice.</small>
             </div>
           </div>
-          <div className='col vertical-line'></div>
-          <div className='col-md-5 col-sm-12 p-4'>
+          <div className='col-md-1 vertical-line '></div>
+          <div className='col-md-5  text-center mb-3 '>
             <div>
               <h2>Call now</h2>
               <h4 className='my-4'>+49 178 8404957</h4>
@@ -162,21 +162,26 @@ export default function Home() {
             </div>
           </center>
           <div className='row ml-2 mt-2 '>
-            <div className='col-md-4 position-relative my-2'><img src={group1} height="auto" width="60%" id="image-section" />
-              <label className='position-absolute text-position'>Book online easily<br /> through our website</label>
+            <div className='col-md-4 position-relative my-2'>
+              <img src={group1} height="auto" width="60%" id="image-section" />
+              <small className='position-absolute text-position'>Book online easily<br /> through our website</small>
             </div>
-            <div className='col-md-4 position-relative my-2'><img src={group2} height="auto" width="60%" id="image-section" />
-              <label className='position-absolute text-position'>Book online easily<br /> through our website</label>
+            <div className='col-md-4 position-relative my-2'>
+              <img src={group2} height="auto" width="60%" id="image-section" />
+              <small className='position-absolute text-position'>Book online easily<br /> through our website</small>
             </div>
-            <div className='col-md-4 position-relative my-2'><img src={group3} height="auto" width="60%" id="image-section" />
-              <label className='position-absolute text-position'>Book online easily<br /> through our website</label>
+            <div className='col-md-4 position-relative my-2'>
+              <img src={group3} height="auto" width="60%" id="image-section" />
+              <small className='position-absolute text-position'>Book online easily<br /> through our website</small>
             </div>
 
-            <div className='col-md-4 position-relative my-2'><img src={group4} height="auto" width="60%" id="image-section" />
-              <label className='position-absolute text-position'>Book online easily<br /> through our website</label>
+            <div className='col-md-4 position-relative my-2'>
+              <img src={group4} height="auto" width="60%" id="image-section" />
+              <small className='position-absolute text-position'>Book online easily<br /> through our website</small>
             </div>
-            <div className='col-md-4 position-relative'><img src={group5} height="auto" width="60%" id="image-section" />
-              <label className='position-absolute text-position'>Book online easily<br /> through our website</label>
+            <div className='col-md-4 position-relative'>
+              <img src={group5} height="auto" width="60%" id="image-section" />
+              <small className='position-absolute text-position'id="image-section">Book online easily<br /> through our website</small>
             </div>
 
           </div>

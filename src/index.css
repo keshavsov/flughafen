@@ -31,12 +31,18 @@ body {
 .vertical-line {
   margin-top: 20px;
   border-left: 2px solid slategrey;
-  height: 260px;
+  height: 240px;
 }
+@media screen and (max-width: 768px){
+  .vertical-line{
+    /* display: none; */
+    border-left: 2px solid slategrey;
+    background:slategrey;
+    height: 2px;
+    width: 90%;
+    margin-left: 4%;
 
-/*  */
-.vertical-line:hover {
-  background-color: 1px solid blue;
+  }
 }
 
 .span {
@@ -96,16 +102,16 @@ body {
 }
 
 .text-position {
-  bottom: 20px;
+  bottom: 10px;
   left: 50px;
   /* font-family: 'DM Sans'; */
   font-style: normal;
   font-weight: 500;
   font-size: 24.4889px;
   line-height: 31px;
-
   color: #000000;
 }
+
 
 .footer-text {
   /* font-family: 'DM Sans'; */
@@ -364,9 +370,10 @@ b {
   color: #0E4672
 }
 
-@media screen and (max-width: 320px){
+/* @media screen and (max-width: 320px){
   #image-section{
       width: 100%;
       height: auto;
+      
     };
-  }
+  } */
