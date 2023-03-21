@@ -58,11 +58,11 @@ export default function Header() {
         </div>
       </div>
     <div className='d-flex justify-content-between flex-wrap'>
-      <Navbar className='white-card' expand="md">
+      <Navbar className='white-card' expand="md" style={{width:"100%"}}>
         <NavbarBrand className='mx-3'><img src={logo} width="180px" height="56px" /></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="ml-auto" navbar>
+          <Nav className="ml-auto "  navbar>
             <NavItem>
               <NavLink className='link-text'>
                 <Link to="/home" className='link '>Calculate & Price Book</Link>

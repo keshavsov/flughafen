@@ -25,15 +25,15 @@ export function Login() {
         <div className="col col-md-7 white-card rounded p-5 my-4 h-50">
           <form>
             <h2>{t('CustomerLogin')}</h2>
-            <p className='p'>Join us! and enjoy your ride in just simple steps.</p>
+            <p className='p'>{t('para-graph')}</p>
             <div class="mb-3">
-              <TextField label="Email address" variant='standard' fullWidth autoComplete='off' />
+              <TextField label={t("pass-add")} variant='standard' fullWidth autoComplete='off' />
               <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
             <div class="mb-3">
             {/* <TextField type="password" label="password" variant='standard' fullWidth autoComplete='off' /> */}
               <FormControl sx={{ width: '100%' }} variant="standard">
-                <InputLabel htmlFor="standard-adornment-password">Password</InputLabel>
+                <InputLabel htmlFor="standard-adornment-password">{t('Password')}</InputLabel>
                 <Input
                   id="standard-adornment-password"
                   type={showPassword ? 'text' : 'password'}
