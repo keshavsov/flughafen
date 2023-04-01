@@ -13,15 +13,28 @@ body {
   overflow-x: hidden;
   font-family: 'DM Sans', sans-serif;
 }
-
-
+/* ---btn---- */
+.btn:hover,.btn:active{
+  color: #000;
+}
 /* Override */
 
 .btn-primary {
   background-color: var(--primary);
   font-size: 18px;
+  color: white;
+  border: unset;
+  padding: 8px;
+  border-radius: 6px;
 }
 
+.btn-primary:hover,.btn-primary:active {
+  background-color: var(--primary);
+  color: white;
+}
+.payment-mehtod-button{
+  border: 2px solid #E6E6E6;
+}
 .white-card {
   background: #FFFFFF;
   border-bottom: 2px solid #E0E0E0;
@@ -58,12 +71,7 @@ body {
   text-align: center;
 }
 
-/* .link-text {
-  
-  margin: 3px -12px 2px -6px;
-  font-family: 'DM Sans';
- 
-} */
+/*------ header-link------- */
 .link {
   text-decoration: none;
   color:#000000;
@@ -74,7 +82,9 @@ body {
   text-align: center;
   white-space: nowrap;
 }
- 
+ .link:hover{
+  color:#000000;
+ }
 
 .p {
   /* font-family: 'DM Sans'; */

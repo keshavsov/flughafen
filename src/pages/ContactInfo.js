@@ -83,13 +83,13 @@ export function ContactInfo({ }) {
                         <div className='row py-5'>
                             <div className='d-flex flex-wrap gap-2'>
                                 <div className='col-md-4'>
-                                    <button className='btn btn-primary  btn-lg'><img src={wallet} width="40px" /> Cash</button>
+                                    <button className='btn-primary p-2 payment-mehtod-button'><img src={wallet} width="40px" /> Cash</button>
                                 </div>
                                 <div className='col-md-3'>
-                                    <button className='btn btn-outline-primary btn-lg'><img src={stripe} width="83px" /></button>
+                                    <button className='btn-outline-primary p-2 payment-mehtod-button'><img src={stripe} width="83px" /></button>
                                 </div>
                                 <div className='col-md-4'>
-                                    <button className='btn btn-outline-primary btn-lg'><img src={paypal} width="83px" /></button>
+                                    <button className=' btn-outline-primary p-2 payment-mehtod-button'><img src={paypal} width="83px" /></button>
                                 </div>
                             </div>
                         </div>

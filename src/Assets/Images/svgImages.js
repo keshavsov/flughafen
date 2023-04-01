@@ -15,7 +15,7 @@ AvatarSvg: ({width = '16', height = '16'}) => <svg xmlns="http://www.w3.org/2000
 <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"/>
 </svg>,
 
-GernamySvg: ({width = '27', height = '27'}) => <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} id="flag-icons-de" viewBox="0 0 512 512">
+GernamySvg: ({width = '27', height = '22'}) => <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} id="flag-icons-de" viewBox="0 0 512 512">
 <path fill="#ffce00" d="M0 341.3h512V512H0z"/>
 <path d="M0 0h512v170.7H0z"/>
 <path fill="#d00" d="M0 170.7h512v170.6H0z"/>

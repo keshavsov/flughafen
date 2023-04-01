@@ -45,7 +45,7 @@ export function Login() {
                         onMouseDown={handleMouseDownPassword}
 
                       >
-                        {showPassword ? <VisibilityOff /> : <Visibility />}
+                        {showPassword ? <Visibility /> : <VisibilityOff />}
                       </IconButton>
                     </InputAdornment>
                   }
@@ -61,7 +61,7 @@ export function Login() {
                 <p>passwort vergessen?</p>
               </div>
             </div>
-            <button type="submit" class="btn btn-primary w-100" onClick={handleLogin}>Submit</button>
+            <button type="submit" class=" btn-primary w-100" onClick={handleLogin}>Submit</button>
             <p></p>
             <center>
               <p> {t('Notamemberyet?')} <Link to="">Jetzt registrieren.</Link></p>

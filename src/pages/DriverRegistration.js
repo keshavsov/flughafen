@@ -45,7 +45,7 @@ export function DriverRegistration() {
                     <h2 className='driver-heading'>THE LADDER TO MAKE YOUR <br /> BUSINESS CLIMB TO THE TOP</h2>
                     <p className="text-driver">With highly authentic deliveries and a solid customer base, we <br />are fast growing network.</p>
                     <h2 className='driver-heading'>- Enhance your business in just a tap!</h2>
-                    <button className='btn btn-primary p-2'>Register Now</button>
+                    <button className='btn-primary p-2'>Register Now</button>
                 </div>
             </div>
             <div className='row my-5 mx-4  '>

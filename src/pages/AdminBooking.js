@@ -244,7 +244,7 @@ export function AdminBooking() {
                         <label for="floatingTextarea">Comments</label>
                     </div>
                 </div>
-                <button className='btn btn-primary w-auto mx-3 px-5 mb-5'>Submit</button>
+                <button className='btn-primary w-auto mx-3 px-5 mb-5'>Submit</button>
             </div>
         </div>
         {/* ---------------model-------------- */}

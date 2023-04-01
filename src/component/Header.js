@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import logo from '../Assets/Images/logo.png'
 import TranslateDropdown from '../component/Elements/TranslateDropdown'
-import { Box, FormControl, MenuItem, Select } from '@mui/material';
+import { Box, FormControl, MenuItem, Select, colors } from '@mui/material';
 import {
   Collapse,
   Navbar,
@@ -57,58 +57,51 @@ export default function Header() {
           </span>
         </div>
       </div>
-    <div className='d-flex justify-content-between flex-wrap'>
-      <Navbar className='white-card' expand="md" style={{width:"100%"}}>
-        <NavbarBrand className='mx-3'><img src={logo} width="180px" height="56px" /></NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="ml-auto "  navbar>
-            <NavItem>
-              <NavLink className='link-text'>
-                <Link to="/home" className='link '>Calculate & Price Book</Link>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink className=''>
-                <Link to="#" className='link' >
-                  About Us
-                </Link>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink className='link-text'>
-                {/* <Link to="#" className=' link'>Business account</Link> */}
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink className='link-text'>
-                <Link to="#" className=' link'>Imprint</Link>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink className='link-text'>
-                {/* <Link to="#" className='link-text link'>News & Updates</Link> */}
-                <Link to="/adminbooking" className=' link'>AdminBooking</Link>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink>
-                <Link to="/drive-vehicle" className=' link'>Driver&vehicle</Link>
-              </NavLink>
-            </NavItem>
-          </Nav>
-        </Collapse>
-      </Navbar>
-      <div className='w-100 d-flex justify-content-between flex-wrap p-2'>
-           <div className='d-flex align-item-center  gap-2'>
-            <Button
-              size='small'
-              variant="contained"
-              sx={{ padding: "8px" }}
-              onClick={handleRegistration}
-            >Registration
-            </Button>
+      <div className='d-flex justify-content-between flex-wrap'>
+        <Navbar className='white-card' expand="md" style={{ width: "100%" }}>
+          <NavbarBrand className='mx-3'><img src={logo} width="180px" height="56px" /></NavbarBrand>
+          <NavbarToggler onClick={toggle} />
+          <Collapse isOpen={isOpen} navbar>
+            <Nav className="ml-auto " navbar>
+              <NavItem>
+                <NavLink className='link-text'>
+                  <Link to="/home" className='link '>Calculate & Price Book</Link>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink className=''>
+                  <Link to="#" className='link' >
+                    About Us
+                  </Link>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink className='link-text'>
+                  {/* <Link to="#" className=' link'>Business account</Link> */}
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink className='link-text'>
+                  <Link to="#" className=' link'>Imprint</Link>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink className='link-text'>
+                  {/* <Link to="#" className='link-text link'>News & Updates</Link> */}
+                  <Link to="/adminbooking" className=' link'>AdminBooking</Link>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink>
+                  <Link to="/drive-vehicle" className=' link'>Driver&vehicle</Link>
+                </NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+          <div className='d-flex align-item-center flex-wrap  gap-2 '>
+            <Link to="/" class="btn btn-outline link" sx={{ padding: "8px", color: "#0E4672" }}> LogIn</Link>
 
+            <button onClick={handleRegistration} className='btn-primary btn-small'>Registration</button>
             <Select
 
               size='small'
@@ -119,14 +112,14 @@ export default function Header() {
               <MenuItem value='Business Agent'>Business/ Agent</MenuItem>
               <MenuItem value='Driver Carrier'>Driver/ Carrier</MenuItem>
             </Select>
-            </div>
-            <div className='d-flex gap-2 py-2'>
-            <Link to="/" class="btn btn-outline link" sx={{ padding: "8px" }}> Login</Link>
-            <TranslateDropdown />
-            </div>
           </div>
+          <div className='d-flex gap-2 py-2'>
+            <TranslateDropdown />
+          </div>
+        </Navbar>
+       
       </div>
-    </div> 
+    </div>
   );
 }
 

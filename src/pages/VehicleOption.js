@@ -28,7 +28,7 @@ export function VehicleOption({ }) {
                 <div className="row align-items-center " style={{ backgroundColor: "#F5F8FA" }}>
                     <div className="col-sm-3">
                         <div className='text-center' style={{ flexDirection: 'column', alignItems: 'center' }}>
-                            <button type="button" className="btn btn-primary rounded-pill px-4"> &#8592; Back</button>
+                            <button type="button" className=" btn-primary rounded-pill px-4"> &#8592; Back</button>
                             <h3 class="ride">Ride Booking</h3>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ export function VehicleOption({ }) {
                         <span className='vehicle-option-sider-text'>{t('Zfassung')}</span>
                         <span className='mx-5'>
                             {/* <EditIcon /> */}
-                            <div style={{ textAlign: "end" }}><button className='btn rounded-pill bg-white px-4 '> <b>Edit</b> </button></div>
+                            <div style={{ textAlign: "end" }}><button className='btn rounded-pill bg-white px-4 color-dark '> <b>Edit</b> </button></div>
 
                         </span>
                         <Stack spacing={2} >
@@ -63,9 +63,9 @@ export function VehicleOption({ }) {
                         </div>
 
                         <div className=' d-flex flex-wrap justify-content-evenly gap-2  '>
-                            <button className="btn btn-primary btn-sm"><img src={buttonIcon2} /> Child Seat</button>
-                            <button className="btn btn-primary btn-sm"> <img src={buttonIcon4} /> Package </button>
-                            <button className="btn btn-primary btn-sm"> <img src={buttonIcon1} />Wheelchair (Foldable)</button>
+                            <button className=" btn-primary btn-sm"><img src={buttonIcon2} /> Child Seat</button>
+                            <button className=" btn-primary btn-sm"> <img src={buttonIcon4} /> Package </button>
+                            <button className=" btn-primary btn-sm"> <img src={buttonIcon1} />Wheelchair (Foldable)</button>
                         </div>
                         <TableVehicle />
 
@@ -91,7 +91,7 @@ export function VehicleOption({ }) {
                                     <Grid item md={2} textAlign="center">
                                         <div className=' card-text mt-2'>
                                             <p>€226.78</p>
-                                            <button className=" btn btn-primary ">{t('wah')}</button>
+                                            <button className="btn-primary ">{t('wah')}</button>
                                         </div>
                                     </Grid>
                                 </Grid>
@@ -117,7 +117,7 @@ export function VehicleOption({ }) {
                                     <Grid item md={2} textAlign="center">
                                         <div className=' card-text mt-2'>
                                             <p>€226.78</p>
-                                            <button className=" btn btn-primary ">{t('wah')}</button>
+                                            <button className="btn-primary ">{t('wah')}</button>
                                         </div>
                                     </Grid>
                                 </Grid>
@@ -146,7 +146,7 @@ export function VehicleOption({ }) {
                                     <Grid item md={2} textAlign="center">
                                         <div className=' card-text mt-2'>
                                             <p>€226.78</p>
-                                            <button className=" btn btn-primary ">{t('wah')}</button>
+                                            <button className="btn-primary ">{t('wah')}</button>
                                         </div>
                                     </Grid>
                                 </Grid>

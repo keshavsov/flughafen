@@ -20,7 +20,7 @@ export  function Done() {
             <p></p>
             <p className='span'>Ride Booking</p>
             <p className='thanku'>Thank you for your order</p>
-            <button className='btn btn-primary' onClick={onhandleBack}><img src={backarrow} width="65px" /> Back To Home</button>
+            <button className='btn-primary' onClick={onhandleBack}><img src={backarrow} width="65px" /> Back To Home</button>
             </div>
 
         </div>

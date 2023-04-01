@@ -137,7 +137,7 @@ const Tablecellbutten = () => {
   return (
     <div style={{ display: "grid", placeContent: "center" }}>
 
-      <butto className=" btn btn-primary ">{t('wah')}</butto>
+      <button className="btn-primary btn-sm ">{t('wah')}</button>
     </div>
   
   )

@@ -28,7 +28,7 @@ export function PaymentList({buttonName,path}) {
         <div className='Gesamt-text'><b>$223.00</b></div>
       </div>
       <div className='mt-4'>
-        <button className="btn btn-primary w-100" onClick={handleProcess}>{buttonName}</button>
+        <button className="btn-primary w-100" onClick={handleProcess}>{buttonName}</button>
       </div>
     </>
   )

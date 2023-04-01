@@ -101,7 +101,7 @@ export default function Home() {
             </details>
             <p></p>
 
-            <button className='btn btn-primary w-100' onClick={handleHomepage}>Book Now</button>
+            <button className='btn-primary w-100' onClick={handleHomepage}>Book Now</button>
 
 
           </form>
