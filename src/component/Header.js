@@ -1,16 +1,9 @@
 import React, { useState } from 'react';
 import logo from '../Assets/Images/logo.png'
+import {useTranslation} from 'react-i18next'
 import TranslateDropdown from '../component/Elements/TranslateDropdown'
 import { Box, FormControl, MenuItem, Select, colors } from '@mui/material';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink
-} from 'reactstrap';
+import {Collapse,Navbar,NavbarToggler,NavbarBrand,Nav,NavItem,NavLink} from 'reactstrap';
 import Button from '@mui/material/Button';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -32,6 +25,7 @@ export default function Header() {
     navigate("/driver-reg")
 
   }
+  const {t}=useTranslation();
   return (
     <div>
       <div className='top-header d-flex gap-4 p-2 ' style={{ background: '#F5F8FA' }}>
@@ -65,40 +59,38 @@ export default function Header() {
             <Nav className="ml-auto " navbar>
               <NavItem>
                 <NavLink className='link-text'>
-                  <Link to="/home" className='link '>Calculate & Price Book</Link>
+                  <Link to="/home" className='link '>{t('header-calculte&price')}</Link>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink className=''>
-                  <Link to="#" className='link' >
-                    About Us
-                  </Link>
+                  <Link to="#" className='link' >{t('header-aboutUs')}</Link>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink className='link-text'>
-                  {/* <Link to="#" className=' link'>Business account</Link> */}
+                  <Link to="#" className=' link'>{t('header-BussinesAccount')}</Link>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink className='link-text'>
-                  <Link to="#" className=' link'>Imprint</Link>
+                  <Link to="#" className=' link'>{t('header-Imprint')}</Link>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink className='link-text'>
-                  {/* <Link to="#" className='link-text link'>News & Updates</Link> */}
-                  <Link to="/adminbooking" className=' link'>AdminBooking</Link>
+                  {/* <Link to="#" className='link-text link'>{t('header-newsUpdate')}</Link> */}
+                  {/* <Link to="/adminbooking" className=' link'>AdminBooking</Link> */}
                 </NavLink>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                 <NavLink>
                   <Link to="/drive-vehicle" className=' link'>Driver&vehicle</Link>
                 </NavLink>
-              </NavItem>
+              </NavItem> */}
             </Nav>
           </Collapse>
-          <div className='d-flex align-item-center flex-wrap  gap-2 '>
+          <div className='d-flex align-item-center flex-wrap  gap-1 '>
             <Link to="/" class="btn btn-outline link" sx={{ padding: "8px", color: "#0E4672" }}> LogIn</Link>
 
             <button onClick={handleRegistration} className='btn-primary btn-small'>Registration</button>
@@ -117,7 +109,7 @@ export default function Header() {
             <TranslateDropdown />
           </div>
         </Navbar>
-       
+
       </div>
     </div>
   );

@@ -36,6 +36,13 @@
     "foot-location":"Standort",
     "foot-link":"Verknüpfungen",
     "working-hour":"Arbeitszeit",
-    "foot-texNumber":"Steuernummer"
+    "foot-texNumber":"Steuernummer",
+
+
+    "header-calculte&price":"Berechnen & Preis buchen",
+    "header-aboutUs":"Über uns",
+    "header-BussinesAccount":"Geschäftskonto",
+    "header-Imprint":"Impressum",
+    "header-newsUpdate":"Nachrichten Update"
 
   }
