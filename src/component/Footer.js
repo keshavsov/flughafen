@@ -6,8 +6,13 @@ import twitter from '../Assets/Images/img_twitter.png'
 import instagram from '../Assets/Images/img_instagram.png'
 import facebook from '../Assets/Images/img_facebook.png'
 import image11 from '../Assets/Images/img_image11.png'
+import { useTranslation} from 'react-i18next'
 const { LocationSvg, ContactSvg, AvatarSvg } = SvgImages;
+
 export function Footer() {
+
+  const {t} =useTranslation();
+
   return (<>
   <div style={{marginTop:"10%"}}>
     <footer className="bd-footer position-relative py-3 mt-5 " style={{ backgroundColor: "#11191F" }} >
@@ -16,7 +21,7 @@ export function Footer() {
           <div className='row text-white '>
             <div className='col-md-4 text-center p-1' >
               <AvatarSvg height='20' width='20' />
-              <b className='footer-text'> Robeena Butt </b>
+              <b className='footer-text'> {t('Roobeena')}Robeena Butt </b>
             </div>
             <div className='col-md-4 text-center p-1' >
               <ContactSvg height='20' width='20' />
@@ -40,10 +45,7 @@ export function Footer() {
               <span><img src={logo}  height="100vh" width="100%" id="image-section" /></span>
             </a>
             <ul className="list-unstyled small text-muted">
-              <li className="mb-2 text-light footer-blog-text "> Airport TransportTaxi is an independent taxi 
-              calculator for planning, ordering and billing of taxi and airport 
-              transfers. On the basis of current taxi prices, we calculate the distance
-               and time-dependent taxi costs.</li>
+              <li className="mb-2 text-light footer-blog-text "> {t('footerText')} </li>
 
             </ul>
           </div>

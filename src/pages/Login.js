@@ -61,10 +61,10 @@ export function Login() {
                 <p>passwort vergessen?</p>
               </div>
             </div>
-            <button type="submit" class=" btn-primary w-100" onClick={handleLogin}>Submit</button>
+            <button type="submit" class=" btn-primary w-100" onClick={handleLogin}>{t('submit')}</button>
             <p></p>
             <center>
-              <p> {t('Notamemberyet?')} <Link to="">Jetzt registrieren.</Link></p>
+              <p> {t('Notamemberyet?')} <Link to="">{t('joinnow')}</Link></p>
             </center>
           </form>
         </div>

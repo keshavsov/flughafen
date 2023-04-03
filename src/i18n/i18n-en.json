@@ -5,7 +5,9 @@
     "Password": "Password",
     "Notamemberyet?": "Not a member yet ?",
     "EMich":"Remind me",
-    
+    "submit":"Submit",
+    "joinnow":"Join Now",
+ 
     "Zfassung":" Summary ",
     "wah":"Choose",
     "AusgetF":"Selected vehicle",
@@ -26,5 +28,8 @@
     "vehiInfo":"vehicle info",
     "vehicl":"vehicle",
     "diskcount":"Do you have a discount code?",
-    "applcode":"Apply code"
+    "applcode":"Apply code",
+
+    "footerText":"Airport TransportTaxi is an independent taxi calculator for planning, ordering and billing of taxi and airport transfers. On the basis of current taxi prices, we calculate the distance and time-dependent taxi costs.",
+    "Foot-Roobeena":"Robeena Butt"
   }

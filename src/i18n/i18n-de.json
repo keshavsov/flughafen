@@ -5,6 +5,8 @@
     "pass-add":"E-Mail-Addresse",
     "Password":"Passwort",
     "EMich":"Erinnere Mich",
+    "submit":"Einreichen",
+    "joinnow":"Jetzt registrieren",
 
     "Zfassung":"Zusammenfassung",
     "wah":"Wahlen",
@@ -26,5 +28,10 @@
     "vehiInfo":"Fahrzeuginfo",
     "vehicl":"Fahrzeug",
     "diskcount":"Haben sie elnen Rabattcode?",
-    "applcode":"Kode Anwenden"
+    "applcode":"Kode Anwenden",
+
+
+    "footerText":"Airport TransportTaxi ist ein unabhängiger Taxirechner zur Planung, Bestellung und Abrechnung von Taxi- und Flughafentransfers. Auf Basis aktueller Taxipreise berechnen wir die entfernungs- und zeitabhängigen Taxikosten.",
+    "Foot-Roobeena":"Robeena Hintern"
+
   }
