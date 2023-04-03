@@ -16,16 +16,19 @@ body {
 /* ---btn---- */
 .btn:hover,.btn:active{
   color: #000;
+  border: 2px solid #E6E6E6;
+
 }
 /* Override */
 
 .btn-primary {
   background-color: var(--primary);
-  font-size: 18px;
+  font-size: 14px;
   color: white;
   border: unset;
   padding: 8px;
   border-radius: 6px;
+  border: 2px solid #E6E6E6;
 }
 
 .btn-primary:hover,.btn-primary:active {

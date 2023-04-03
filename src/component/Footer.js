@@ -21,7 +21,7 @@ export function Footer() {
           <div className='row text-white '>
             <div className='col-md-4 text-center p-1' >
               <AvatarSvg height='20' width='20' />
-              <b className='footer-text'> {t('Roobeena')}Robeena Butt </b>
+              <b className='footer-text'> {t('Foot-Roobeena')} </b>
             </div>
             <div className='col-md-4 text-center p-1' >
               <ContactSvg height='20' width='20' />
@@ -30,7 +30,7 @@ export function Footer() {
 
             <div className='col-md-4 text-center p-1' >
               <LocationSvg height='20' width='20' />
-              <b className='footer-text'> Location</b>
+              <b className='footer-text'>{t('foot-location')}</b>
 
             </div>
 
@@ -50,20 +50,20 @@ export function Footer() {
             </ul>
           </div>
           <div className="col-md-2  col-sm-3 text-center ">
-            <h5 className='text-light footer-text-header'>Links</h5>
+            <h5 className='text-light footer-text-header'>{t('foot-link')}</h5>
             <ul className="list-unstyled">
               <li className="mb-2"><Link className="footer-link" to="/">Home</Link></li>
               <li className="mb-2"><Link className="footer-link"to="/">Home</Link></li>
             </ul>
           </div>
           <div className="col-md-4 col-sm-3 text-center " >
-            <h5 className='text-light footer-text-header'>Working Hours</h5>
+            <h5 className='text-light footer-text-header'>{t('working-hour')}</h5>
             <ul className="list-unstyled">
               <li className="mb-2 "><Link  className="footer-link" to="/">We are there for you around the clock, 24/7, 365 days a year.</Link></li>
             </ul>
           </div>
           <div className="col-md-2 col-sm-3 text-center">
-            <h5 className='text-light footer-text-header'>Tax Number</h5>
+            <h5 className='text-light footer-text-header'>{t('foot-texNumber')}</h5>
             <ul className="list-unstyled">
               <li className="mb-2"><Link className="footer-link" to="">2186361508</Link></li>
 

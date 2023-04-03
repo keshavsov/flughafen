@@ -31,5 +31,9 @@
     "applcode":"Apply code",
 
     "footerText":"Airport TransportTaxi is an independent taxi calculator for planning, ordering and billing of taxi and airport transfers. On the basis of current taxi prices, we calculate the distance and time-dependent taxi costs.",
-    "Foot-Roobeena":"Robeena Butt"
+    "Foot-Roobeena":"Robeena Butt",
+    "foot-location":"Location",
+    "foot-link":"Link",
+    "working-hour":"Working Hours",
+    "foot-texNumber":"Tax Number"
   }

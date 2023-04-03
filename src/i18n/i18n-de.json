@@ -32,6 +32,10 @@
 
 
     "footerText":"Airport TransportTaxi ist ein unabhängiger Taxirechner zur Planung, Bestellung und Abrechnung von Taxi- und Flughafentransfers. Auf Basis aktueller Taxipreise berechnen wir die entfernungs- und zeitabhängigen Taxikosten.",
-    "Foot-Roobeena":"Robeena Hintern"
+    "Foot-Roobeena":"Robeena Hintern",
+    "foot-location":"Standort",
+    "foot-link":"Verknüpfungen",
+    "working-hour":"Arbeitszeit",
+    "foot-texNumber":"Steuernummer"
 
   }
