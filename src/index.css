@@ -139,8 +139,8 @@ body {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 600;
-  font-size: 30px;
-  line-height: 47px;
+  font-size: 33px;
+  line-height: 38px;
   color: #FFFFFF
 
 }
@@ -199,22 +199,16 @@ b {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 23px;
   color: #FFFFFF;
 }
 
 .avtar-position {
   position: relative;
-  left: -115px;
-  top: 39px;
+  left: -125px;
+  top: 36px;
 }
-
-.contact-ion-position {}
-
-.location-ion-position {}
-
-
 
 
 /* Over Ride Stepper */
